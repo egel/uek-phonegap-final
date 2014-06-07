@@ -1,5 +1,5 @@
 # UEK Phonegap
-> Aplikacja stworzona na zajęcia z Zaawansowanych Aplikacji Internetowych w oparciu o technologię Phonegap oraz jQuery mobile
+> Aplikacja stworzona na zajęcia z Zaawansowanych Aplikacji Internetowych w oparciu o technologię Phonegap oraz jQuery mobile.
 
 ## Instalacja
 
@@ -8,7 +8,7 @@
 
 ```bash
 cd /path/to/your/folder/
-git clone https://github.com/egel/sikora-uek-phonegap
+git clone https://github.com/egel/uek-phonegap-final
 ```
 
 ## Zadanie

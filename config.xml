@@ -12,9 +12,11 @@
     Aplikacja stworzona przez Maciej Sypień jako finalny projekt z tworzenia zaawansowanych aplikacji internetowych.
   </description>
 
-  <author email="maciej.sypien@gmail.com">
+  <author email="maciej.sypien@gmail.com" href="http://egel.pl">
     Maciej Sypień
   </author>
+
+  <content src="index.html" />
 
   <!-- Platforms -->
   <gap:platform name="android" />
