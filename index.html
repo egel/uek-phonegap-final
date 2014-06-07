@@ -19,9 +19,9 @@
     <div data-role="panel" id="myPanel1" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left ui-btn-active">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -30,12 +30,13 @@
     </div>
 
     <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>UEK</h1>
+      <h1>Antyplagiat</h1>
       <a href="#myPanel1" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
     </div>
 
     <div data-role="main" class="ui-content" style="text-align:center;">
-      <img src="images/logo-uek-mini.png" alt="Logo Uniwersyteru Ekonomicznego w Krakowie" />
+      <img src="images/logo-uek-mini.png" alt="Logo Uniwersyteru Ekonomicznego w Krakowie" width="300" />
+      <h4>Aplikacja prezentująca działanie systemu Antyplagiat</h41>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -43,14 +44,14 @@
     </div>
   </div>
 
-  <!-- ============================== Mission ========================== -->
-  <div data-role="page" id="page_mission">
+  <!-- ============================== Info overall ========================== -->
+  <div data-role="page" id="page_overall_info">
     <div data-role="panel" id="myPanel2" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left ui-btn-active">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left ui-btn-active">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -59,18 +60,33 @@
     </div>
 
     <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Misja</h1>
+      <h1>Informacje ogólne</h1>
       <a href="#myPanel2" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
-    <div data-role="main" class="ui-content" style="text-align:center;">
-      <h1>"Rerum cognoscere causas et valorem..."</h1>
+    <div data-role="main" class="ui-content">
+      <p>Sprawdzanie prac Systemem Antyplagiatowym (w wersji dla Uniwersytetu Ekonomicznego w Krakowie) odbywa się w oparciu o tzw. <strong>kody</strong>. Kod oznacza uprawnienie do jednokrotnego sprawdzenia tekstu pracy o objętości nie przekraczającej limitu określonego dla danego rodzaju kodu.</p>
 
-      <h4>Poznawać przyczyny i wartości rzeczy<br/>
-      dać uniwersalne wykształcenie,<br/>
-      łączyć wiedzę zawodową z wiedzą ogólną<br/>
-      o charakterze metodologicznym i teoretycznym</h4>
+      <p>Bezpłatne kody przydzielane są przez Uczelnianego Administratora Systemu Antyplagiatowego, działającego przy Centrum Informatyki Uniwersytetu Ekonomicznego w Krakowie (na podstawie Zarządzenia Rektora UEK z dnia 28 lutego 2009). Po wyczerpaniu limitu kodów bezpłatnych można zakupić dodatkowe kody poprzez system transakcyjny dostępny w ramach konta studenckiego w Plagiat.pl. W uzasadnionym przypadku dodatkowy Kod Duży może zostać także przydzielony studentowi z puli uczelnianej na wniosek Promotora.</p>
+
+      <p>W ramach Systemu Antyplagiatowego istnieją dwa rodzaje kodów:</p>
+
+      <h3>Kod Duży</h3>
+      <p>umożliwia sprawdzenie pracy o objętości do 500 tys. znaków (łącznie ze spacjami, znakami formatowania i edycji) i służy do sprawdzania prac dyplomowych (magisterskich, licencjackich i inżynierskich).</p>
+
+      <p>Na początku ostatniego semestru studiów wszystkim studentom tego semestru przyznawany jest jeden Kod Duży z puli uczelnianej. Kod ten przyznawany jest na podstawie list dziekańskich według ich stanu na koniec przedostatniego semestru studiów.</p>
+
+      <p>Studenci, którzy na początku ostatniego semestru studiów nie mają przyznanego Kodu Dużego, a byli wpisani na listę studentów przedostatniego semestru studiów, muszą skontaktować się z Uczelnianym Administratorem Systemu Antyplagiatowego (UASA).W przypadku braku możliwości potwierdzenia przez UASA statusu danej osoby w systemie dziekanatowym konieczne jest osobiste pojawienie się na dyżurze UASA i okazanie w indeksie wpisu na ostatni semestr studiów.</p>
+
+      <h3>Kod Mały</h3>
+      <p>Umożliwia sprawdzenie pracy o objętości do 50 tys. znaków (łącznie ze spacjami, znakami formatowania i edycji) i służy do sprawdzania prac przejściowych (referatów, projektów, prac zaliczeniowych itp.) pisanych przez studenta w toku studiów na UEK.</p>
+
+      <p>Kody Małe przyznawane są studentom przez Uczelnianego Administratora Systemu Antyplagiatowego na wniosek pracownika dydaktycznego Uniwersytetu Ekonomicznego w Krakowie, prowadzącego ze studentami wykłady, ćwiczenia, warsztaty, laboratoria i inne formy zajęć objęte tokiem nauczania. W przypadku wprowadzenia przez pracownika dydaktycznego wymogu weryfikacji pracy w Systemie Antyplagiatowym student obligatoryjnie otrzymuje minimum jeden bezpłatny kod.</p>
+
+      <p>W przypadku konieczności sprawdzenia pracy przejściowej Systemem Antyplagiatowym, a nie otrzymania Kodu Małego, student zwraca się do prowadzącego zajęcia z prośbą o wyjaśnienie, czy prowadzący zajęcia zlecił Uczelnianemu Administratorowi Systemu Antyplagiatowego przyznanie Kodów Małych w związku ze swoim przedmiotem.</p>
+
+      <p>Liczbę kodów posiadanych w danym momencie i wykorzystanych do tej pory można sprawdzić na stronie dostępnej pod opcją menu Kody z poziomego menu nawigacyjnego.</p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -79,13 +95,13 @@
   </div>
 
   <!-- ============================== Courses ========================== -->
-  <div data-role="page" id="page_courses">
+  <div data-role="page" id="page_activate_account">
     <div data-role="panel" id="myPanel3" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -94,39 +110,115 @@
     </div>
 
     <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Kierunki studiów</h1>
+      <h1>Aktywacja konta</h1>
       <a href="#myPanel3" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
     <div data-role="main" class="ui-content" >
-      <ul data-role="listview" data-inset="true" data-theme="c">
-        <li data-role="list-divider">Wydział Ekonomii i Stosunków Międzynarodowych</li>
-        <li><a href="#">Socjologia</a></li>
-        <li><a href="#">Stosunki Międzynarodowe</a></li>
-        <li><a href="#">Międzynarodowe Stosunki Gospodarcze</a></li>
-        <li><a href="#">Gospodarka i Administracja Publiczna</a></li>
-        <li><a href="#">Europeistyka</a></li>
-        <li><a href="#">Ekonomia</a></li>
-        <li><a href="#">Administracja</a></li>
+      <h2>Krok 1</h2>
+      <h3>Aktywacja studenckiej skrzynki e-mail</h3>
 
-        <li data-role="list-divider">Wydział Finansów</li>
-        <li><a href="#">Gospodarka przestrzenna</a></li>
-        <li><a href="#">Finanse i rachunkowość</a></li>
+      <p>Pierwszym krokiem do aktywowania swojego studenckiego konta w Systemie Antyplagiatowym jest uzyskanie dostępu do studenckiej skrzynki (konta) poczty elektronicznej na serwerze wizard.uek.krakow.pl.</p>
 
-        <li data-role="list-divider">Wydział Towaroznawstwa</li>
-        <li><a href="#">Zarządzanie i inżynieria produkcji</a></li>
-        <li><a href="#">Towaroznawstwo </a></li>
 
-        <li data-role="list-divider">Wydział Zarządzania</li>
-        <li><a href="#">Zarządzanie</a></li>
-        <li><a href="#">Turystyka i rekreacja</a></li>
-        <li><a href="#">Rachunkowość i kontrolling</a></li>
-        <li><a href="#">Marketing i komunikacja rynkowa</a></li>
-        <li><a href="#">Informatyka stosowana</a></li>
-        <li><a href="#">Informatyka i ekonometria</a></li>
-        <li><a href="#">Analityka gospodarcza</a></li>
-      </ul>
+      <p class="info-warrning"><span class="head">Uwaga!</span>
+      Ze względów bezpieczeństwa ten pierwszy krok (pobranie hasła do studenckiego konta poczty elektronicznej) może być wykonany wyłącznie z terenu Kampusu UEK, w związku z czym warto jest uzyskać hasło do swojej skrzynki e-mail zawczasu (przy okazji jakichś zajęć), by nie musieć potem specjalnie przyjeżdżać w tym celu. Próba pobrania hasła do skrzynki e-mail spoza terenu Kampusu UEK skutkuje wyświetleniem komunikatu informującego, że hasło może być pobrane tylko z sieci uczelnianej.</p>
+
+      <img src="images/krok1/student_uek_blokada.jpg" alt="Hasło może być wyłacznie pobrane z terenu kampusu UEK" />
+
+
+      <p>Aby uzyskać dostęp do studenckiego konta e-mail należy:</p>
+
+      <ol class="better-list">
+        <li>Wejść na stronę pod adresem <a href="student.uek.krakow.pl">student.uek.krakow.pl</a>.</li>
+        <li>W menu po prawej stronie kliknąć link <strong><i>Hasło startowe</i></strong>, co spowoduje wyświetlenie strony z formularzem do pobierania hasła.</li>
+
+        <img src="images/krok1/haslo_startowe_na_UEK.jpg" alt="Formularz pobierania hasła startowego z terenu kampusu UEK" />
+
+        <li>Wypełnić pola:
+          <ul>
+            <li>imię</li>
+            <li>nazwisko</li>
+            <li>nr albumu (indeksu)</li>
+            <li>nr PESEL</li>
+            <li>imię ojca i imię matki</li>
+          </ul>
+          oraz zaakceptować oświadczenie o stosowaniu się do postanowień regulaminów i zarządzeń dotyczących użytkowania uczelnianych sieci komputerowych i kont pocztowych.
+        </li>
+
+        <li>Kliknąć przycisk <strong><i>Pobierz hasło</i></strong>.</li>
+
+        <li>W górnym menu strony kliknąć link <strong><i>Poczta dla studentów</i></strong> lub ręcznie w okienko adresowe przeglądarki stron internetowych wpisać adres <a href="https://wizard.uek.krakow.pl/webmail/">https://wizard.uek.krakow.pl/webmail/</a>.</li>
+
+        <img src="images/krok1/student_uek_naglowek_poczta.jpg" alt="Link do poczty studenckiej w górnym menu" />
+
+        <li>W okienko logowania, które pojawi się na kolejnej stronie wpisać:<br />
+        nazwę użytkownika (login): numer albumu (indeksu) porzedzony małą literką "s", np. s654321,<br />
+        hasło startowe uzyskane na stronie student.uek.krakow.pl.</li>
+
+        <img src="images/krok1/poczta_studencka_okienko_logowania.jpg" alt="Okienko logowania do studenckiej poczty elektronicznej UEK" />
+
+        <li>Kliknąć przycisk <strong><i>Zaloguj</i></strong>.</li>
+
+      </ol>
+
+
+      <h2>Krok 2</h2>
+      <h3>Aktywacja studenckiej skrzynki w systemie Plagiat.pl</h3>
+
+
+      <p>Do korzystania z Systemu Antyplagiatowego wymagane jest posiadanie przez Studenta aktywnej skrzynki (krok 1) poczty elektronicznej na uczelnianym, studenckim serwerze (wizard.uek.krakow.pl).</p>
+
+      <p class="info-warrning"><span class="head">Uwaga!</span> Ze względów bezpieczeństwa skrzynkę (konto) na studenckim, uczelnianym serwerze pocztowym aktywować można tylko z terenu Kampusu UEK.</p>
+
+      <p>Wszyscy studenci Uniwersytetu Ekonomicznego w Krakowie mają założone konta w Systemie Antyplagiatowym (<a href="http://plagiat.pl">plagiat.pl</a>). Konta te są dostępne dla Studentów, którzy pozostają wpisani na listy dziekańskie. Osoby, które przerwały studia lub z innych przyczyn zostały skreślone z listy studentów w celu uzyskania dostępu muszą wpierw reaktywować się w prawach Studenta UEK i zostać wpisane na listę studentów.</p>
+
+      <p>Każdy ze Studentów powinien aktywować swoje konto w Systemie Antyplagiatowym (czyli uzyskać do niego dostęp) zgodnie z niniejszą procedurą aktywacji kont.</p>
+
+      <p>W momencie utworzenia konta Studenta w systemie Plagiat.pl na studencką, uczelnianą skrzynkę e-mail Studenta przesyłana jest wiadomość o poniższej treści, zawierająca nazwę użytkownika (login) oraz hasło do konta w systemie Plagiat.</p>
+
+      <pre>From: plagiat@plagiat.pl
+To: s777777@wizard.uek.krakow.pl
+Subject: Witamy w serwisie plagiat.pl
+
+Ten email został wygenerowany automatycznie.
+Prosimy na niego nie odpowiadać.
+
+Witamy w Serwisie PLAGIAT.PL!
+Oto hasło dla konta o loginie
+s777777@wizard.uek.krakow.pl :
+xW0b7iww
+
+Życzymy owocnej pracy z Systemem
+
+Zespół PLAGIAT.PL
+System Antyplagiatowy dostępny jest pod adresem
+internetowym www.plagiat.pl.
+      </pre>
+
+      <h3>Logowanie do systemu plagiat.pl</h3>
+      <p>System Antyplagiatowy dostępny jest pod adresem internetowym: <a href="www.plagiat.pl">www.plagiat.pl</a>.</p>
+
+      <p>Aby zalogować się na konto w Systemie Antyplagiatowym należy w odpowiednie okienka znajdujące się w prawym górnym rogu ekranu wpisać login oraz otrzymane pocztą elektroniczną hasło. A następnie kliknąć czerwony okrągły przycisk znajdujący się po prawej stronie okienek logowania.</p>
+
+      <img src="images/krok2/01_Logowanie_do_Systemu_Antyplagiatowego.jpg" alt="Logowanie do Systemu Antyplagiatowego" />
+
+      <p class="info-warrning"><span class="head">Uwaga! </span> Loginem do Systemu Antyplagiatowego jest pełny adres poczty elektronicznej konta studenckiego, według wzoru <strong>s999999@wizard.uek.krakow.pl</strong>, gdzie w części identyfikującej użytkownika po literze <strong>s</strong> następuje numer indeksu.</p>
+
+      <p>Po zalogowaniu się na konto w Systemie Antyplagiatowym pojawia się formularz, w którym należy uzupełnić swoje dane.
+        <ul>
+          <li>Z rozwijanego menu należy wybrać wydział Uniwersytetu Ekonomicznego w Krakowie, na którym się studiuje oraz wpisać imię i nazwisko.</li>
+          <li>Następnie należy uważnie zapoznać się z treścią Regulaminu korzystania z Systemu Antyplagiatowego oraz Oświadczenia dotyczącego praw autorskich i danych osobowych, przewijając do końca okienka, w których te treści są zamieszczone.</li>
+          <li> A następnie zaznaczyć kliknięciem oba pola akceptacji tekstów <i>Regulaminu</i> i <i>Oświadczenia</i>, a następnie potwierdzić wysyłkę danych za pomocą przycisku <strong>Zapisz swoje dane</strong>.</li>
+        </ul>
+      </p>
+
+      <img src="images/krok2/02_Aktywacja_konta_Studenta.jpg" alt="Uzupełnienie danych użytkownika i akceptacja regulaminu" />
+
+      <p class="info-warrning"><span class="head">Uwaga! </span> Do zapisania danych użytkownika niezbędne jest przewinięcie do końca tekstów w okienkach treści Regulaminu i Oświadczenia za pomocą pasków przewijania. Przed kliknięciem przycisku Zapisz swoje dane należy uważnie sprawdzić wprowadzone dane, gdyż ich modyfikacja będzie wymagała osobistego skontaktowania się z Uczelnianym Administratorem Systemu Antyplagiatowego działającym przy Centrum Informatyki Uniwersytetu Ekonomicznego w Krakowie.</p>
+
+      <p class="info-warrning"><span class="head">Uwaga! </span>W przypadku zagubienia hasła lub konieczności zmiany hasła do konta w Systemie Antyplagiatowym, należy skorzystać z procedury odzyskania hasła.</p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -135,13 +227,13 @@
   </div>
 
   <!-- ============================= Schedule ========================== -->
-  <div data-role="page" id="page_schedule">
+  <div data-role="page" id="page_login_to_account">
     <div data-role="panel" id="myPanel4" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -232,9 +324,9 @@
     <div data-role="panel" id="myPanel5" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -314,9 +406,9 @@
     <div data-role="panel" id="myPanel6" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left ui-btn-active">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -361,9 +453,9 @@
     <div data-role="panel" id="myPanel7" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Kontakt</a>
@@ -398,9 +490,9 @@
     <div data-role="panel" id="myPanel8" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -547,9 +639,9 @@
     <div data-role="panel" id="myPanel9" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
-      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
-      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -564,9 +656,9 @@
     </div>
 
     <div data-role="main" class="ui-content" style="text-align:center; padding-top: 100px;">
-      <h1>Rafał Sikora</h1>
-      <p>Grupa dziekańska: <strong>KrDUIs1011</strong></p>
-      <p>Numer albumu: <strong>161026</strong></p>
+      <h1>Maciej Sypień</h1>
+      <p>Grupa dziekańska: <strong>KrZUIs2011</strong></p>
+      <p>Numer albumu: <strong>184774</strong></p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
