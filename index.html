@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>UEK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+  <link rel="stylesheet" href="css/themes/red-baron.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/extra-added-styles.css" />
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+
+  <!-- ============================== Main Page ========================== -->
+  <div data-role="page" id="page_main">
+    <div data-role="panel" id="myPanel1" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left ui-btn-active">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>UEK</h1>
+      <a href="#myPanel1" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+    </div>
+
+    <div data-role="main" class="ui-content" style="text-align:center;">
+      <img src="images/logo-uek-mini.png" alt="Logo Uniwersyteru Ekonomicznego w Krakowie" />
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+  <!-- ============================== Mission ========================== -->
+  <div data-role="page" id="page_mission">
+    <div data-role="panel" id="myPanel2" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left ui-btn-active">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Misja</h1>
+      <a href="#myPanel2" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content" style="text-align:center;">
+      <h1>"Rerum cognoscere causas et valorem..."</h1>
+
+      <h4>Poznawać przyczyny i wartości rzeczy<br/>
+      dać uniwersalne wykształcenie,<br/>
+      łączyć wiedzę zawodową z wiedzą ogólną<br/>
+      o charakterze metodologicznym i teoretycznym</h4>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+  <!-- ============================== Courses ========================== -->
+  <div data-role="page" id="page_courses">
+    <div data-role="panel" id="myPanel3" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Kierunki studiów</h1>
+      <a href="#myPanel3" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content" >
+      <ul data-role="listview" data-inset="true" data-theme="c">
+        <li data-role="list-divider">Wydział Ekonomii i Stosunków Międzynarodowych</li>
+        <li><a href="#">Socjologia</a></li>
+        <li><a href="#">Stosunki Międzynarodowe</a></li>
+        <li><a href="#">Międzynarodowe Stosunki Gospodarcze</a></li>
+        <li><a href="#">Gospodarka i Administracja Publiczna</a></li>
+        <li><a href="#">Europeistyka</a></li>
+        <li><a href="#">Ekonomia</a></li>
+        <li><a href="#">Administracja</a></li>
+
+        <li data-role="list-divider">Wydział Finansów</li>
+        <li><a href="#">Gospodarka przestrzenna</a></li>
+        <li><a href="#">Finanse i rachunkowość</a></li>
+
+        <li data-role="list-divider">Wydział Towaroznawstwa</li>
+        <li><a href="#">Zarządzanie i inżynieria produkcji</a></li>
+        <li><a href="#">Towaroznawstwo </a></li>
+
+        <li data-role="list-divider">Wydział Zarządzania</li>
+        <li><a href="#">Zarządzanie</a></li>
+        <li><a href="#">Turystyka i rekreacja</a></li>
+        <li><a href="#">Rachunkowość i kontrolling</a></li>
+        <li><a href="#">Marketing i komunikacja rynkowa</a></li>
+        <li><a href="#">Informatyka stosowana</a></li>
+        <li><a href="#">Informatyka i ekonometria</a></li>
+        <li><a href="#">Analityka gospodarcza</a></li>
+      </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+  <!-- ============================= Schedule ========================== -->
+  <div data-role="page" id="page_schedule">
+    <div data-role="panel" id="myPanel4" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Plan zajęć</h1>
+      <a href="#myPanel4" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2 style="text-align:center;">KrDUIs1011</h2>
+      <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+        <thead>
+          <tr>
+            <th>Dzień, godzina</th>
+            <th data-priority="1">Przedmiot</th>
+            <th data-priority="2">Typ</th>
+            <th data-priority="3">Nauczyciel</th>
+            <th data-priority="4">Sala</th>
+            <th data-priority="5">Termin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2014-05-29</td>
+            <td>Cz 14:50 - 16:25</td>
+            <td>Marketing i handel elektroniczny</td>
+            <td>wykład</td>
+            <td>dr Krzysztof Kapera</td>
+            <td>Paw.F 514</td>
+          </tr>
+          <tr>
+            <td>2014-05-29</td>
+            <td>Pt 18:10 - 20:35</td>
+            <td>Marketing i handel elektroniczny</td>
+            <td>ćwiczenia</td>
+            <td>dr Krzysztof Kapera</td>
+            <td>Paw.F 615</td>
+          </tr>
+          <tr>
+            <td>2014-06-02</td>
+            <td>Pn 14:50 - 16:25</td>
+            <td>Zaawansowane aplikacje internetowe</td>
+            <td>wykład</td>
+            <td>dr Janusz Stal</td>
+            <td>Paw.A 013 lab. Vista,Office07</td>
+          </tr>
+          <tr>
+            <td>2014-06-02</td>
+            <td>Pn 18:10 - 19:45</td>
+            <td>Język obcy</td>
+            <td>lektorat</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>2014-06-03</td>
+            <td>Wt 14:50 - 16:25</td>
+            <td>Modelowanie i symulacja komputerowa</td>
+            <td>wykład</td>
+            <td>dr Wit Urban</td>
+            <td>Paw.B 056</td>
+          </tr>
+          <tr>
+            <td>2014-06-03</td>
+            <td>Wt 16:30 - 18:05</td>
+            <td>Pracownia projektowa</td>
+            <td>ćwiczenia</td>
+            <td>dr Paweł Wołoszyn</td>
+            <td>Paw.A 07 lab. Vista,Office07</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+
+  <!-- ============================== Opinions ========================== -->
+  <div data-role="page" id="page_opinions">
+    <div data-role="panel" id="myPanel5" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Opinie</h1>
+      <a href="#myPanel5" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <form method="post" action="demoform.asp">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>Płeć:</legend>
+            <label for="male">Mężczyzna</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Kobieta</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </fieldset>
+
+        <div class="ui-field-contain">
+          <label for="age">Wiek:</label>
+          <input type="text" name="age" id="age" data-clear-btn="true" placeholder="np: 24"/>
+        </div>
+
+        <div class="ui-field-contain">
+          <label for="bday">Data rozpoczęcia studiów:</label>
+          <input type="date" name="bday" id="bday" />
+        </div>
+
+        <fieldset class="ui-field-contain">
+          <label for="day">Kierunek studiów:</label>
+          <select name="day" id="day" data-native-menu="false">
+            <option value="">Stosunki Międzynarodowe</option>
+            <option value="">Socjologia</option>
+            <option value="">Międzynarodowe Stosunki Gospodarcze</option>
+            <option value="">Gospodarka i Administracja Publiczna</option>
+            <option value="">Europeistyka</option>
+            <option value="">Ekonomia</option>
+            <option value="">Administracja</option>
+
+            <option value="">Finanse i rachunkowość</option>
+            <option value="">Gospodarka przestrzenna</option>
+
+            <option value="">Zarządzanie i inżynieria produkcji</option>
+            <option value="">Towaroznawstwo</option>
+
+            <option value="">Zarządzanie</option>
+            <option value="">Turystyka i rekreacja</option>
+            <option value="">Rachunkowość i kontrolling</option>
+            <option value="">Marketing i komunikacja rynkowa</option>
+            <option value="">Informatyka stosowana</option>
+            <option value="">Informatyka i ekonometria</option>
+            <option value="">Analityka gospodarcza</option>
+          </select>
+        </fieldset>
+
+        <div class="ui-field-contain">
+          <label for="info">Opinia o UEK</label>
+          <textarea name="addinfo" id="info" placeholder="Napisz opinię o UEK"></textarea>
+        </div>
+        <input type="submit" data-inline="true" value="Prześlij">
+      </form>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+
+  <!-- ============================== Gallery ========================== -->
+  <div data-role="page" id="page_gallery">
+    <div data-role="panel" id="myPanel6" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left ui-btn-active">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Galeria</h1>
+      <a href="#myPanel6" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2>Wejście Główne Uniwersyteru Ekonomicznego w Krakowie</h2>
+      <p>
+        <img src="images/uek_bud_glowny047.jpg" alt="Wejście Główne Uniwersyteru Ekonomicznego w Krakowie" />
+        <label>Jesienne ujęcie uchwycone przez fotografa ukazującey główny budynek Uniwersytetu Ekonomicznego w Krakowie.</label>
+      </p>
+
+      <h2>Dom Ogrodnika</h2>
+      <p>
+        <img src="images/uek_dom_ogrodnika02.jpg" alt="Wejście Główne Uniwersyteru Ekonomicznego w Krakowie" />
+        <label>Spojrzenie na jeden z budynków Uniwersytetu Ekonomicznego w Krakowie - Dom ogrodnika.</label>
+      </p>
+
+      <h2>Olimpiada Przedsiębiorczości</h2>
+      <p>
+        <img src="images/uek_hala_widowiskowo_sportowa27.jpg" alt="Widok na hale sportową przedstawiającą egzamin z olimpiady przedsiębiorczości" />
+        <label>Widok na hale sportową przedstawiającą trwający egzamin z olimpiady przedsiębiorczości przeprowadzany na terenie kampusu.</label>
+      </p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+
+  <!-- ============================== Contact ========================== -->
+  <div data-role="page" id="page_contact">
+    <div data-role="panel" id="myPanel7" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Kontakt</h1>
+      <a href="#myPanel7" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+    <h2 style="text-align:center;">Adres do korespondencji:</h2>
+    <p style="text-align:center;">
+       Uniwersytet Ekonomiczny w Krakowie<br/>
+       ul. Rakowicka 27, 31-510 Kraków
+    </p>
+    <p style="text-align:center;">Tel.: (012) 293 5700 lub (012) 293 5200 </p>
+    <p style="text-align:center;">E-mail: <a href="mailto:kancelaria@uek.krakow.pl" title="Napisz wiadomość">kancelaria@uek.krakow.pl</a></p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+
+  <!-- ============================== Pulbic transport ========================== -->
+  <div data-role="page" id="page_transport">
+    <div data-role="panel" id="myPanel8" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left ui-btn-active">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Rozkład jazdy</h1>
+      <a href="#myPanel8" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2 style="text-align:center;">Przystanki</h2>
+      <div data-role="collapsibleset">
+        <div data-role="collapsible">
+          <h3>Uniwersystet Ekonimiczny</h3>
+          <p>Wyberz interesujący Cię środek trasportu</p>
+          <div data-role="collapsible">
+            <h3>2</h3>
+            <p>Tramwaj</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>182</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>482</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>501</h3>
+            <p>Autobus</p>
+          </div>
+        </div>
+        <div data-role="collapsible">
+          <h3>Rondo Mogilskie</h3>
+          <p>Wyberz interesujący Cię środek trasportu</p>
+          <div data-role="collapsible">
+            <h3>4</h3>
+            <p>Tramwaj</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>10</h3>
+            <p>Tramwaj</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>14</h3>
+            <p>Tramwaj</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>20</h3>
+            <p>Tramwaj</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>50</h3>
+            <p>Tramwaj</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>52</h3>
+            <p>Tramwaj</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>62</h3>
+            <p>Tramwaj Nocny</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>64</h3>
+            <p>Tramwaj Nocny</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>74</h3>
+            <p>Tramwaj</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>125</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>152</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>182</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>184</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>482</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>501</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>502</h3>
+            <p>Autobus</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>605</h3>
+            <p>Autobus Nocny</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>608</h3>
+            <p>Autobus Nocny</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>618</h3>
+            <p>Autobus Nocny</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>704</h3>
+            <p>Linia tymczasowa</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>724</h3>
+            <p>Linia tymczasowa</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>728</h3>
+            <p>Linia tymczasowa</p>
+          </div>
+          <div data-role="collapsible">
+            <h3>744</h3>
+            <p>Linia tymczasowa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+
+  <!-- ============================== Autor ========================== -->
+  <div data-role="page" id="page_author">
+    <div data-role="panel" id="myPanel9" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_mission" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Misja</a>
+      <a href="#page_courses" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Kierunki</a>
+      <a href="#page_schedule" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Plan zajęć</a>
+      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
+      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left ui-btn-active">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Autor</h1>
+      <a href="#myPanel9" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content" style="text-align:center; padding-top: 100px;">
+      <h1>Rafał Sikora</h1>
+      <p>Grupa dziekańska: <strong>KrDUIs1011</strong></p>
+      <p>Numer albumu: <strong>161026</strong></p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+</body>
+</html>

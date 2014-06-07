@@ -1,0 +1,30 @@
+/*
+ *  Dodatkowe style do projektu jQuery Mobile
+ */
+.ui-field-contain {
+  border-bottom: none;
+}
+
+.ui-content img {
+  height:auto;
+  max-width: 100%;
+}
+
+#page_main img {
+  padding-top: 30px;
+}
+
+#page_gallery .ui-content h1,h2,h3,h4,h5,h6 {
+  padding-top: 20px;
+  clear: both;
+}
+#page_gallery .ui-content h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#page_gallery .ui-content img {
+  float: left;
+  padding-right: 7px;
+  padding-bottom: 7px;
+}

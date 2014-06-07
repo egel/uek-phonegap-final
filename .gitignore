@@ -1,0 +1,11 @@
+## Unnecessary files
+README.html
+
+## Sublime workspace
+*.sublime-workspace
+
+# Unnecessary images
+!images/
+
+images/todo/
+!images/todo/*
