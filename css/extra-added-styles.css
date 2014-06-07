@@ -1,3 +1,18 @@
+pre {
+  background: #e8e8e8;
+  padding: 10px;
+}
+
+.info-warrning {
+  padding: 15px;
+  background: #CBF748
+}
+
+.info-warrning span.head {
+  clear: both;
+  font-weight:bold;
+}
+
 /*
  *  Dodatkowe style do projektu jQuery Mobile
  */
@@ -27,4 +42,11 @@
   float: left;
   padding-right: 7px;
   padding-bottom: 7px;
+}
+
+/*
+ * Lists
+ */
+ol.better-list li {
+    padding: 10px 0 10px 0;
 }
