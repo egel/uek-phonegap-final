@@ -103,6 +103,7 @@ Warto posłużyć się następującymi rozwiązaniami podczas budowy aplikacji:
   - [JQueryMobile tutorial](http://www.w3schools.com/jquerymobile/default.asp)
   - [W3School](http://www.w3schools.com/jquerymobile/jquerymobile_examples.asp) jQuery Mobile examples
   - WAŻNE - Zanim projekt zostanie przekompilowany do aplikacji mobilnej, warto sprawdzić go odpowiednim [validatorem](http://validator.w3.org/#validate_by_input) udostępnionemu dzięki konsorcjum **W3C**, aby pozbyć się potencjalnych błędów w działaniu aplikacji.
+  - [How to install Android SDK on Ubuntu](http://askubuntu.com/questions/318246/complete-installation-guide-for-android-sdk-adt-bundle-on-ubuntu)
 
 
 ## Phonegap Build
