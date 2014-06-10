@@ -12,9 +12,11 @@
   <!-- -->
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
-  <script type="text/javascript" src="js/cordova-1.9.0.js"></script>
+  <script type="text/javascript" src="js/cordova-3.4.0-for-android.js"></script>
   <script type="text/javascript" src="js/plugins/Flashlight.js"></script>
-  <script type="text/javascript" src="js/myScript.js"></script>
+
+  <script type="text/javascript" src="js/compass.js"></script>
+  <script type="text/javascript" src="js/flashlight.js"></script>
 
 </head>
 <body>
@@ -28,7 +30,7 @@
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -58,7 +60,7 @@
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -108,7 +110,7 @@
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -239,7 +241,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -253,68 +255,6 @@ internetowym www.plagiat.pl.</pre>
 
     <div data-role="main" class="ui-content">
       <h2 style="text-align:center;">KrDUIs1011</h2>
-      <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
-        <thead>
-          <tr>
-            <th>Dzień, godzina</th>
-            <th data-priority="1">Przedmiot</th>
-            <th data-priority="2">Typ</th>
-            <th data-priority="3">Nauczyciel</th>
-            <th data-priority="4">Sala</th>
-            <th data-priority="5">Termin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2014-05-29</td>
-            <td>Cz 14:50 - 16:25</td>
-            <td>Marketing i handel elektroniczny</td>
-            <td>wykład</td>
-            <td>dr Krzysztof Kapera</td>
-            <td>Paw.F 514</td>
-          </tr>
-          <tr>
-            <td>2014-05-29</td>
-            <td>Pt 18:10 - 20:35</td>
-            <td>Marketing i handel elektroniczny</td>
-            <td>ćwiczenia</td>
-            <td>dr Krzysztof Kapera</td>
-            <td>Paw.F 615</td>
-          </tr>
-          <tr>
-            <td>2014-06-02</td>
-            <td>Pn 14:50 - 16:25</td>
-            <td>Zaawansowane aplikacje internetowe</td>
-            <td>wykład</td>
-            <td>dr Janusz Stal</td>
-            <td>Paw.A 013 lab. Vista,Office07</td>
-          </tr>
-          <tr>
-            <td>2014-06-02</td>
-            <td>Pn 18:10 - 19:45</td>
-            <td>Język obcy</td>
-            <td>lektorat</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>2014-06-03</td>
-            <td>Wt 14:50 - 16:25</td>
-            <td>Modelowanie i symulacja komputerowa</td>
-            <td>wykład</td>
-            <td>dr Wit Urban</td>
-            <td>Paw.B 056</td>
-          </tr>
-          <tr>
-            <td>2014-06-03</td>
-            <td>Wt 16:30 - 18:05</td>
-            <td>Pracownia projektowa</td>
-            <td>ćwiczenia</td>
-            <td>dr Paweł Wołoszyn</td>
-            <td>Paw.A 07 lab. Vista,Office07</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -332,20 +272,20 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
     <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Opinie</h1>
+      <h1>Latarka</h1>
       <a href="#myPanel5" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
     <div data-role="main" class="ui-content">
-      <button id="btnFlashlightToggle" onclick="flashlightToggle()"></button>
+      <button id="btnFlashlightToggle" onclick="flashlightToggle()">Latarka On/Off</button>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -354,8 +294,8 @@ internetowym www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ============================== Gallery ========================== -->
-  <div data-role="page" id="page_gallery">
+  <!-- ============================== Comapass ========================== -->
+  <div data-role="page" id="page_compass">
     <div data-role="panel" id="myPanel6" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
@@ -363,36 +303,20 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left ui-btn-active">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left ui-btn-active">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
     <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Galeria</h1>
+      <h1>Kompass</h1>
       <a href="#myPanel6" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
     <div data-role="main" class="ui-content">
-      <h2>Wejście Główne Uniwersyteru Ekonomicznego w Krakowie</h2>
-      <p>
-        <img src="images/uek_bud_glowny047.jpg" alt="Wejście Główne Uniwersyteru Ekonomicznego w Krakowie" />
-        <label>Jesienne ujęcie uchwycone przez fotografa ukazującey główny budynek Uniwersytetu Ekonomicznego w Krakowie.</label>
-      </p>
-
-      <h2>Dom Ogrodnika</h2>
-      <p>
-        <img src="images/uek_dom_ogrodnika02.jpg" alt="Wejście Główne Uniwersyteru Ekonomicznego w Krakowie" />
-        <label>Spojrzenie na jeden z budynków Uniwersytetu Ekonomicznego w Krakowie - Dom ogrodnika.</label>
-      </p>
-
-      <h2>Olimpiada Przedsiębiorczości</h2>
-      <p>
-        <img src="images/uek_hala_widowiskowo_sportowa27.jpg" alt="Widok na hale sportową przedstawiającą egzamin z olimpiady przedsiębiorczości" />
-        <label>Widok na hale sportową przedstawiającą trwający egzamin z olimpiady przedsiębiorczości przeprowadzany na terenie kampusu.</label>
-      </p>
+      <img src="images/compass_needle.png" id="needle" />
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -410,7 +334,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -447,7 +371,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left ui-btn-active">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -596,7 +520,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
+      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left ui-btn-active">Autor</a>
