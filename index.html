@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>UEK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
   <link rel="stylesheet" href="css/themes/red-baron.min.css" />
   <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
@@ -11,13 +13,13 @@
 
   <!-- JavaScript -->
   <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
-  <script type="text/javascript" charset="utf-8" src="js/compass.js"></script>
+  <script src="js/plugins/Flashlight.js"></script>
+  <script src="js/flashlight.js"></script>
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
 
 </head>
 <body>
-
   <!-- ============================== Main Page ========================== -->
   <div data-role="page" id="page_main">
     <div data-role="panel" id="myPanel1" data-position-fixed="true" data-display="reveal" data-theme="b">
@@ -25,7 +27,7 @@
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left ui-btn-active">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -55,7 +57,7 @@
       <a href="#page_main" class="ui-btn ui-corner-all ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left ui-btn-active">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -105,7 +107,7 @@
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -236,7 +238,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -267,7 +269,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -298,7 +300,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left ui-btn-active">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -329,7 +331,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Kontakt</a>
@@ -366,7 +368,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
@@ -515,7 +517,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
