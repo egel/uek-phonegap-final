@@ -9,8 +9,12 @@
   <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
   <link rel="stylesheet" href="css/extra-added-styles.css" />
 
-  <script src="js/jquery-1.10.2.min.js"></script>
-  <script src="js/jquery.mobile-1.4.2.min.js"></script>
+  <!-- -->
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/plugins/Flashlight.js"></script>
+  <script type="text/javascript" src="js/myScript.js"></script>
+
 </head>
 <body>
 
@@ -22,7 +26,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
@@ -52,7 +56,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left ui-btn-active">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
@@ -94,7 +98,7 @@
     </div>
   </div>
 
-  <!-- ============================== Courses ========================== -->
+  <!-- ============================== Activate account ========================== -->
   <div data-role="page" id="page_activate_account">
     <div data-role="panel" id="myPanel3" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -102,7 +106,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
@@ -225,7 +229,7 @@ internetowym www.plagiat.pl.</pre>
     </div>
   </div>
 
-  <!-- ============================= Schedule ========================== -->
+  <!-- ============================= Login to account ========================== -->
   <div data-role="page" id="page_login_to_account">
     <div data-role="panel" id="myPanel4" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -233,7 +237,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
@@ -318,15 +322,15 @@ internetowym www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ============================== Opinions ========================== -->
-  <div data-role="page" id="page_opinions">
+  <!-- ============================== Flashlight ========================== -->
+  <div data-role="page" id="page_flashlight">
     <div data-role="panel" id="myPanel5" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
@@ -340,58 +344,7 @@ internetowym www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content">
-      <form method="post" action="demoform.asp">
-        <fieldset data-role="controlgroup" data-type="horizontal">
-          <legend>Płeć:</legend>
-            <label for="male">Mężczyzna</label>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="female">Kobieta</label>
-            <input type="radio" name="gender" id="female" value="female">
-        </fieldset>
-
-        <div class="ui-field-contain">
-          <label for="age">Wiek:</label>
-          <input type="text" name="age" id="age" data-clear-btn="true" placeholder="np: 24"/>
-        </div>
-
-        <div class="ui-field-contain">
-          <label for="bday">Data rozpoczęcia studiów:</label>
-          <input type="date" name="bday" id="bday" />
-        </div>
-
-        <fieldset class="ui-field-contain">
-          <label for="day">Kierunek studiów:</label>
-          <select name="day" id="day" data-native-menu="false">
-            <option value="">Stosunki Międzynarodowe</option>
-            <option value="">Socjologia</option>
-            <option value="">Międzynarodowe Stosunki Gospodarcze</option>
-            <option value="">Gospodarka i Administracja Publiczna</option>
-            <option value="">Europeistyka</option>
-            <option value="">Ekonomia</option>
-            <option value="">Administracja</option>
-
-            <option value="">Finanse i rachunkowość</option>
-            <option value="">Gospodarka przestrzenna</option>
-
-            <option value="">Zarządzanie i inżynieria produkcji</option>
-            <option value="">Towaroznawstwo</option>
-
-            <option value="">Zarządzanie</option>
-            <option value="">Turystyka i rekreacja</option>
-            <option value="">Rachunkowość i kontrolling</option>
-            <option value="">Marketing i komunikacja rynkowa</option>
-            <option value="">Informatyka stosowana</option>
-            <option value="">Informatyka i ekonometria</option>
-            <option value="">Analityka gospodarcza</option>
-          </select>
-        </fieldset>
-
-        <div class="ui-field-contain">
-          <label for="info">Opinia o UEK</label>
-          <textarea name="addinfo" id="info" placeholder="Napisz opinię o UEK"></textarea>
-        </div>
-        <input type="submit" data-inline="true" value="Prześlij">
-      </form>
+      <button id="btnFlashlightToggle" onclick="flashlightToggle()"></button>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -408,7 +361,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left ui-btn-active">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
@@ -455,7 +408,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
@@ -492,7 +445,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left ui-btn-active">Rozkład jazdy</a>
@@ -641,7 +594,7 @@ internetowym www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a onclick="navigator.app.loadUrl('https://www.plagiat.pl/webplagiat/main.action', { openExternal:true });" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_opinions" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Opinie</a>
+      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_gallery" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Galeria</a>
       <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
       <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
