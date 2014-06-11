@@ -7,7 +7,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
-  <link rel="stylesheet" href="css/themes/red-baron.min.css" />
+  <link rel="stylesheet" href="css/themes/purple-rainbow.min.css" />
   <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
   <link rel="stylesheet" href="css/extra-added-styles.css" />
 
@@ -20,7 +20,7 @@
 
 </head>
 <body>
-  <!-- ============================== Main Page ========================== -->
+  <!-- ****************************** Main Page ******************************* -->
   <div data-role="page" id="page_main">
     <div data-role="panel" id="myPanel1" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -30,8 +30,7 @@
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
@@ -50,7 +49,7 @@
     </div>
   </div>
 
-  <!-- ============================== Info overall ========================== -->
+  <!-- ****************************** Info overall ******************************* -->
   <div data-role="page" id="page_overall_info">
     <div data-role="panel" id="myPanel2" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -60,18 +59,19 @@
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
+
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
     <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Informacje ogólne</h1>
+      <h1>Antyplagiat</h1>
       <a href="#myPanel2" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
     <div data-role="main" class="ui-content">
+      <h2>Informacje ogólne</h2>
       <p>Sprawdzanie prac Systemem Antyplagiatowym (w wersji dla Uniwersytetu Ekonomicznego w Krakowie) odbywa się w oparciu o tzw. <strong>kody</strong>. Kod oznacza uprawnienie do jednokrotnego sprawdzenia tekstu pracy o objętości nie przekraczającej limitu określonego dla danego rodzaju kodu.</p>
 
       <p>Bezpłatne kody przydzielane są przez Uczelnianego Administratora Systemu Antyplagiatowego, działającego przy Centrum Informatyki Uniwersytetu Ekonomicznego w Krakowie (na podstawie Zarządzenia Rektora UEK z dnia 28 lutego 2009). Po wyczerpaniu limitu kodów bezpłatnych można zakupić dodatkowe kody poprzez system transakcyjny dostępny w ramach konta studenckiego w Plagiat.pl. W uzasadnionym przypadku dodatkowy Kod Duży może zostać także przydzielony studentowi z puli uczelnianej na wniosek Promotora.</p>
@@ -100,7 +100,7 @@
     </div>
   </div>
 
-  <!-- ============================== Activate account ========================== -->
+  <!-- ****************************** Activate account ******************************* -->
   <div data-role="page" id="page_activate_account">
     <div data-role="panel" id="myPanel3" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -110,8 +110,8 @@
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
+
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
@@ -188,8 +188,9 @@
 To: s777777@wizard.uek.krakow.pl
 Subject: Witamy w serwisie plagiat.pl
 
-Ten email został wygenerowany automatycznie.
-Prosimy na niego nie odpowiadać.
+Ten email został wygenerowany
+automatycznie. Prosimy na niego
+nie odpowiadać.
 
 Witamy w Serwisie PLAGIAT.PL!
 Oto hasło dla konta o loginie
@@ -199,8 +200,9 @@ xW0b7iww
 Życzymy owocnej pracy z Systemem
 
 Zespół PLAGIAT.PL
-System Antyplagiatowy dostępny jest pod adresem
-internetowym www.plagiat.pl.</pre>
+System Antyplagiatowy dostępny jest
+pod adresem internetowym
+www.plagiat.pl.</pre>
 
       <h3>Logowanie do systemu plagiat.pl</h3>
       <p>System Antyplagiatowy dostępny jest pod adresem internetowym: <a href="www.plagiat.pl">www.plagiat.pl</a>.</p>
@@ -231,7 +233,7 @@ internetowym www.plagiat.pl.</pre>
     </div>
   </div>
 
-  <!-- ============================= Login to account ========================== -->
+  <!-- ============================= Login to account ******************************* -->
   <div data-role="page" id="page_login_to_account">
     <div data-role="panel" id="myPanel4" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -241,8 +243,8 @@ internetowym www.plagiat.pl.</pre>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
+
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
@@ -262,7 +264,7 @@ internetowym www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ============================== Flashlight ========================== -->
+  <!-- ****************************** Flashlight ******************************* -->
   <div data-role="page" id="page_flashlight">
     <div data-role="panel" id="myPanel5" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -272,8 +274,8 @@ internetowym www.plagiat.pl.</pre>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
+
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
@@ -293,7 +295,7 @@ internetowym www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ============================== Comapass ========================== -->
+  <!-- ****************************** Comapass ******************************* -->
   <div data-role="page" id="page_compass">
     <div data-role="panel" id="myPanel6" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -303,8 +305,8 @@ internetowym www.plagiat.pl.</pre>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left ui-btn-active">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
+
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
@@ -324,8 +326,8 @@ internetowym www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ============================== Contact ========================== -->
-  <div data-role="page" id="page_contact">
+  <!-- ****************************** Settings ******************************* -->
+  <div data-role="page" id="page_settings">
     <div data-role="panel" id="myPanel7" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
@@ -334,8 +336,8 @@ internetowym www.plagiat.pl.</pre>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Ustawienia</a>
+
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
 
@@ -361,156 +363,7 @@ internetowym www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ============================== Pulbic transport ========================== -->
-  <div data-role="page" id="page_transport">
-    <div data-role="panel" id="myPanel8" data-position-fixed="true" data-display="reveal" data-theme="b">
-      <h2>Menu</h2>
-      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
-      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left ui-btn-active">Rozkład jazdy</a>
-      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
-    </div>
-
-    <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Rozkład jazdy</h1>
-      <a href="#myPanel8" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
-      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
-    </div>
-
-    <div data-role="main" class="ui-content">
-      <h2 style="text-align:center;">Przystanki</h2>
-      <div data-role="collapsibleset">
-        <div data-role="collapsible">
-          <h3>Uniwersystet Ekonimiczny</h3>
-          <p>Wyberz interesujący Cię środek trasportu</p>
-          <div data-role="collapsible">
-            <h3>2</h3>
-            <p>Tramwaj</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>182</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>482</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>501</h3>
-            <p>Autobus</p>
-          </div>
-        </div>
-        <div data-role="collapsible">
-          <h3>Rondo Mogilskie</h3>
-          <p>Wyberz interesujący Cię środek trasportu</p>
-          <div data-role="collapsible">
-            <h3>4</h3>
-            <p>Tramwaj</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>10</h3>
-            <p>Tramwaj</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>14</h3>
-            <p>Tramwaj</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>20</h3>
-            <p>Tramwaj</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>50</h3>
-            <p>Tramwaj</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>52</h3>
-            <p>Tramwaj</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>62</h3>
-            <p>Tramwaj Nocny</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>64</h3>
-            <p>Tramwaj Nocny</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>74</h3>
-            <p>Tramwaj</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>125</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>152</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>182</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>184</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>482</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>501</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>502</h3>
-            <p>Autobus</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>605</h3>
-            <p>Autobus Nocny</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>608</h3>
-            <p>Autobus Nocny</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>618</h3>
-            <p>Autobus Nocny</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>704</h3>
-            <p>Linia tymczasowa</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>724</h3>
-            <p>Linia tymczasowa</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>728</h3>
-            <p>Linia tymczasowa</p>
-          </div>
-          <div data-role="collapsible">
-            <h3>744</h3>
-            <p>Linia tymczasowa</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div data-role="footer" data-position="fixed" data-theme="d">
-      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
-    </div>
-  </div>
-
-
-  <!-- ============================== Autor ========================== -->
+  <!-- ****************************** Autor ******************************* -->
   <div data-role="page" id="page_author">
     <div data-role="panel" id="myPanel9" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -520,8 +373,8 @@ internetowym www.plagiat.pl.</pre>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
       <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
       <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
-      <a href="#page_contact" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Kontakt</a>
-      <a href="#page_transport" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left">Rozkład jazdy</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
+
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left ui-btn-active">Autor</a>
     </div>
 
