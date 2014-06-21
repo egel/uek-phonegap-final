@@ -22,7 +22,7 @@
 
   // PhoneGap is ready
   //
-  function onDeviceReady() {
+  function show_settings() {
       var element = document.getElementById('deviceProperties');
 
       element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
@@ -364,6 +364,11 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content">
+      <label for="flip-3">Flip toggle switch:</label>
+      <select name="flip-3" id="flip-3" data-role="slider" data-mini="true" onclick="show_settings()">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+      </select>
       <p id="deviceProperties">Loading device properties...</p>
     </div>
 
