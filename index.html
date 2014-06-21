@@ -280,7 +280,7 @@ www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ****************************** Flashlight ******************************* -->
+  <!-- ****************************** Dodatki ******************************* -->
   <div data-role="page" id="page_flashlight">
     <div data-role="panel" id="myPanel5" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -302,7 +302,11 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content">
-      <button id="btnFlashlightOff" onclick="flashlightToggle();">Latarka On/Off</button>
+      <label for="flip-1">Latarka:</label>
+      <select name="flip-1" id="btnFlashlightOff" data-role="slider" onclick="flashlightToggle();">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+      </select>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
