@@ -11,24 +11,27 @@
   <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
   <link rel="stylesheet" href="css/extra-added-styles.css" />
 
-  <!-- JavaScript -->
-  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
-  <script src="js/plugins/Flashlight.js"></script>
-  <script src="js/flashlight.js"></script>
-  <script>
+
+  <!-- phonegap -->
+  <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+  <script type="text/javascript" charset="utf-8">
+
+  // Wait for PhoneGap to load
+  //
   document.addEventListener("deviceready", onDeviceReady, false);
 
+  // PhoneGap is ready
+  //
   function onDeviceReady() {
       var element = document.getElementById('deviceProperties');
 
-      element.innerHTML =
-        'Device Name: ' + device.name + '<br/>' +
-        'Device PhoneGap: ' + device.phonegap + '<br/>' +
-        'Device Platform: ' + device.platform + '<br/>' +
-        'Device UUID: ' + device.uuid + '<br/>' +
-        'Device Version: ' + device.version + '<br/>';
+      element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
+                          'Device PhoneGap: ' + device.phonegap + '<br />' +
+                          'Device Platform: ' + device.platform + '<br />' +
+                          'Device UUID: '     + device.uuid     + '<br />' +
+                          'Device Version: '  + device.version  + '<br />';
   }
+
   </script>
 
 </head>
@@ -361,7 +364,7 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content">
-      <p id='deviceProperties'>Loading device properties...</p>
+      <p id="deviceProperties">Loading device properties...</p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -402,5 +405,12 @@ www.plagiat.pl.</pre>
     </div>
   </div>
 
+
+  <!-- Javascript loading -->
+
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/plugins/Flashlight.js"></script>
+  <script type="text/javascript" src="js/flashlight.js"></script>
 </body>
 </html>
