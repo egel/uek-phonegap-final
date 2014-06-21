@@ -15,6 +15,7 @@
   <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
   <script src="js/plugins/Flashlight.js"></script>
   <script src="js/flashlight.js"></script>
+  <script src="js/device-settings.js"></script>
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
 
@@ -233,7 +234,7 @@ www.plagiat.pl.</pre>
     </div>
   </div>
 
-  <!-- ============================= Login to account ******************************* -->
+  <!-- ***************************** Login to account ******************************* -->
   <div data-role="page" id="page_login_to_account">
     <div data-role="panel" id="myPanel4" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
@@ -348,13 +349,7 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content">
-    <h2 style="text-align:center;">Adres do korespondencji:</h2>
-    <p style="text-align:center;">
-       Uniwersytet Ekonomiczny w Krakowie<br/>
-       ul. Rakowicka 27, 31-510 Kraków
-    </p>
-    <p style="text-align:center;">Tel.: (012) 293 5700 lub (012) 293 5200 </p>
-    <p style="text-align:center;">E-mail: <a href="mailto:kancelaria@uek.krakow.pl" title="Napisz wiadomość">kancelaria@uek.krakow.pl</a></p>
+      <p id='deviceProperties'>Loading device properties...</p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
