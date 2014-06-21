@@ -22,7 +22,7 @@
 
   // PhoneGap is ready
   //
-  function show_settings() {
+  function onDeviceReady() {
       var element = document.getElementById('deviceProperties');
 
       element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
@@ -44,8 +44,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
     </div>
@@ -73,8 +72,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left ui-btn-active">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
 
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -124,8 +122,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Aktywacja konta</a>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
 
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -257,8 +254,7 @@ www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
 
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -281,15 +277,14 @@ www.plagiat.pl.</pre>
 
 
   <!-- ****************************** Dodatki ******************************* -->
-  <div data-role="page" id="page_flashlight">
+  <div data-role="page" id="page_addons">
     <div data-role="panel" id="myPanel5" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active" data-transitions="slide">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
 
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -315,37 +310,6 @@ www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ****************************** Comapass ******************************* -->
-  <div data-role="page" id="page_compass">
-    <div data-role="panel" id="myPanel6" data-position-fixed="true" data-display="reveal" data-theme="b">
-      <h2>Menu</h2>
-      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
-      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left ui-btn-active">Kompass</a>
-      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
-
-      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
-    </div>
-
-    <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Kompass</h1>
-      <a href="#myPanel6" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
-      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
-    </div>
-
-    <div data-role="main" class="ui-content">
-      <img src="images/compass_needle.png" id="needle">
-    </div>
-
-    <div data-role="footer" data-position="fixed" data-theme="d">
-      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
-    </div>
-  </div>
-
-
   <!-- ****************************** Settings ******************************* -->
   <div data-role="page" id="page_settings">
     <div data-role="panel" id="myPanel7" data-position-fixed="true" data-display="reveal" data-theme="b">
@@ -354,8 +318,8 @@ www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Dodatki</a>
+
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Ustawienia</a>
 
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
@@ -368,11 +332,6 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content">
-      <label for="flip-3">Flip toggle switch:</label>
-      <select name="flip-3" id="flip-3" data-role="slider" data-mini="true" onclick="show_settings()">
-          <option value="off">Off</option>
-          <option value="on">On</option>
-      </select>
       <p id="deviceProperties">Loading device properties...</p>
     </div>
 
@@ -390,8 +349,8 @@ www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#logging" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_flashlight" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Latarka</a>
-      <a href="#page_compass" class="ui-btn ui-corner-all ui-icon-camera ui-btn-icon-left">Kompass</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left" data-transitions="slide">Dodatki</a>
+
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
 
       <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left ui-btn-active">Autor</a>
