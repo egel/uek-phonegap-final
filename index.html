@@ -25,15 +25,13 @@
   function onDeviceReady() {
       var element = document.getElementById('deviceProperties');
 
-      element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
-                          'Device PhoneGap: ' + device.phonegap + '<br />' +
-                          'Device Platform: ' + device.platform + '<br />' +
-                          'Device UUID: '     + device.uuid     + '<br />' +
-                          'Device Version: '  + device.version  + '<br />';
+      element.innerHTML = '<strong>Nazwa urządzenia:</strong> '     + device.name     + '<br />' +
+                          '<strong>Wersja PhoneGap:</strong> ' + device.phonegap + '<br />' +
+                          '<strong>Platforma urządzania:</strong> ' + device.platform + '<br />' +
+                          '<strong>UUID urządzania:</strong> '     + device.uuid     + '<br />' +
+                          '<strong>Wersja oprogramowania urządzania:</strong> '  + device.version  + '<br />';
   }
-
   </script>
-
 </head>
 <body>
   <!-- ****************************** Main Page ******************************* -->
@@ -297,11 +295,12 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content">
-      <label for="flip-1">Latarka:</label>
-      <select name="flip-1" id="btnFlashlightOff" data-role="slider" onclick="flashlightToggle();">
-          <option value="off">Off</option>
-          <option value="on">On</option>
-      </select>
+      <fieldset>
+        <div data-role="fieldcontain" id="btnFlashlightOff" onclick="flashlightToggle();">
+          <label for="checkbox-based-flipswitch">Latarka:</label>
+          <input type="checkbox" data-role="flipswitch">
+        </div>
+      </fieldset>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
