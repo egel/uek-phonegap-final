@@ -31,6 +31,12 @@
                           '<strong>UUID urządzania:</strong> '     + device.uuid     + '<br />' +
                           '<strong>Wersja oprogramowania urządzania:</strong> '  + device.version  + '<br />';
   }
+
+  function onDeviceReady() {
+      window.localStorage.setItem("imie", "Stefan");
+      var value = window.localStorage.getItem("imie");
+      document.getElementById("imie-uzytkownika").innerHTML = value;
+  }
   </script>
 </head>
 <body>
@@ -54,7 +60,8 @@
 
     <div data-role="main" class="ui-content" style="text-align:center;">
       <img src="images/logo-uek-mini.png" alt="Logo Uniwersyteru Ekonomicznego w Krakowie" width="300" />
-      <h4>Aplikacja prezentująca działanie systemu Antyplagiat</h41>
+      <h4>Aplikacja prezentująca działanie systemu Antyplagiat</h4>
+      <p id="imie-uzytkownika">Loading from localStorage</p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
