@@ -8,6 +8,11 @@ pre {
   background: #ffcb35;
 }
 
+.info-sand {
+  padding: 15px;
+  background: #eecd86;
+}
+
 .info-warrning span.head {
   clear: both;
   font-weight:bold;
