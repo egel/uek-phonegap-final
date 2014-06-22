@@ -31,6 +31,7 @@
                           '<strong>UUID urządzania:</strong> '     + device.uuid     + '<br />' +
                           '<strong>Wersja oprogramowania urządzania:</strong> '  + device.version  + '<br />';
 
+      // ustawienie defaultowych danych aplikacji
       window.localStorage.setItem("imie", "Stefan");
       var value = window.localStorage.getItem("imie");
       document.getElementById("imie-uzytkownika").innerHTML = value;
@@ -46,6 +47,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
       <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
       <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
@@ -76,6 +78,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left ui-btn-active">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
       <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
       <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
@@ -126,6 +129,7 @@
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Aktywacja konta</a>
       <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
       <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
       <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
@@ -250,14 +254,15 @@ www.plagiat.pl.</pre>
     </div>
   </div>
 
-  <!-- ***************************** Login to account ******************************* -->
-  <div data-role="page" id="page_login_to_account">
+  <!-- ***************************** Złożenia i procedury ******************************* -->
+  <div data-role="page" id="page_procedures">
     <div data-role="panel" id="myPanel4" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left ui-btn-active">Logowanie</a>
+      <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-active">Złożenia i procedury</a>
       <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
       <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
@@ -265,13 +270,18 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Plan zajęć</h1>
+      <h1>Złożenia i procedury</h1>
       <a href="#myPanel4" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
     <div data-role="main" class="ui-content">
-      <h2 style="text-align:center;">KrDUIs1011</h2>
+      <h3>Instrukcja sprawdzania:</h3>
+      <button href="">Praca dyplomowa</button>
+      <button href="">Praca przejściowa</button>
+
+      <h3>Procedury:</h3>
+      <button href="">Zmiana hasła do konta</button>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -288,6 +298,7 @@ www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
       <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
       <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
@@ -323,6 +334,7 @@ www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
       <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
       <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Ustawienia</a>
@@ -354,6 +366,7 @@ www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
       <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left ui-btn-active">FAQ</a>
       <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
@@ -462,6 +475,7 @@ www.plagiat.pl.</pre>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
       <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
       <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
       <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
       <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
       <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
