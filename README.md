@@ -49,45 +49,7 @@ Aplikacja powinna spełniać następujące wymagania:
   9. Korzystając z usługi ‘Phonegap Build’, utwórz natywną wersję aplikacji dla systemu operacyjnego Android.
   10. Umieść wszystkie pliki wchodzące w skład aplikacji (apk, html, css, itd.) w archiwum ZIP o nazwie TwojeNazwiskoImie-UEK.zip a następnie prześlij plik ZIP na platformę Moodle do oceny.
 
-### Treść zadania
-
-#### Ekrany aplikacji
-
-  - Strona główna
-    - Nagłówek
-      - Tytuł: UEK
-      - Przycisk do otwierania panelu
-    - Treść - Logo CUE (odszukaj w witrynie uczelni)
-    - Stopka
-    - Panel zawierający menu aplikacji (nazwy pozostałych ekranów)
-
-  - Misja
-    - Odszukaj w witrynie UEK właściwy tekst
-
-  - Kierunki
-    - Lista kierunków podzielona na wydziały (list dividers)
-
-  - Plan zajęć
-    - Tabela (kolumny jak w planie zajęć)
-    - 4-5 pozycji z plan u zajęć
-
-  - Opinie
-    - Płeć (pole opcji)
-    - Wiek (pole edycyjne)
-    - Data rozpoczęcia studiów (pole daty)
-    - Kierunek studiów (lista)
-    - Opinia o UEK (pole edycyjne)
-
-  - Galeria
-    -Lista zdjęć (min.3) wraz z opisem (kilka słów do każdego zdjęcia)
-    - Zdjęcia pobrać z witryny UEK [zdjecia-uczelni](http://nowa.uek.krakow.pl/pl/wspolpraca/media/zdjecia-uczelni.html)
-
-  - Kontakt
-    - Adres
-    - Nr telefonu
-    - Email
-
-#### Informacje dodatkowe
+### Informacje dodatkowe
 
   - Każde okno aplikacji, oprócz głównego, powinno posiadać w nagłówku przycisk Home, z lewej stronie tytułu, bez opisu
   - Zastosuj do wszystkich okien jeden dowolnie wybrany efekt przejścia
@@ -99,7 +61,7 @@ Aplikacja powinna spełniać następujące wymagania:
 Warto posłużyć się następującymi rozwiązaniami podczas budowy aplikacji:
 
   - Generator ikonek [http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html](http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
-  - Dodatek do Chrome [Ripple Emulator (Beta)](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc), który pomaga w projektowaniu apki na mniejsze urzadzenia - WAŻNE: aby dodatek działał poprawnie należy właczyć w ustawieniach rozszerzeń `Zezwalaj na dostęp do adresów URL plików`.
+  - [Ripple Emulator (Beta)](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc) - dodatek do Chrome, który pomaga w projektowaniu apki na mniejsze urzadzenia - WAŻNE: aby dodatek działał poprawnie należy właczyć w ustawieniach rozszerzeń `Zezwalaj na dostęp do adresów URL plików`.
   - [JQueryMobile tutorial](http://www.w3schools.com/jquerymobile/default.asp)
   - [W3School](http://www.w3schools.com/jquerymobile/jquerymobile_examples.asp) jQuery Mobile examples
   - WAŻNE - Zanim projekt zostanie przekompilowany do aplikacji mobilnej, warto sprawdzić go odpowiednim [validatorem](http://validator.w3.org/#validate_by_input) udostępnionemu dzięki konsorcjum **W3C**, aby pozbyć się potencjalnych błędów w działaniu aplikacji.
