@@ -369,15 +369,26 @@ www.plagiat.pl.</pre>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
-    <div data-role="main" class="ui-content">
+    <div data-role="main" class="ui-content" ng-app="">
+      <div ng-init="faq = [
+          {question:'Mary', answer:'800-BIG-MARY'},
+          {question:'Mike', answer:'555-4321'},
+          {question:'Adam', answer:'555-5678'},
+          {question:'Julie', answer:'555-8765'},
+          {question:'Juliette', answer:'555-5678'}
+      ]"></div>
 
+      <h2 style="margin:0; padding:0">Szukaj pytania:</h2>
+      <input ng-model="searchText">
+        <div ng-repeat="item in faq | filter:searchText">
+          <li>
+            <h4>{{item.question}}</h4>
+            <p>{{item.answer}}</p>
+          </li>
+        </div>
+      <p ng-show="(faq | filter:searchText).length == 0"><strong>Brak pasujących odpowiedzi</strong></p>
 
       <ol>
-        <li>
-          <h4>Czy sprawdzanie pracy dyplomowej systemem antyplagiatowym jest obowiązkowe?</h4>
-          <p>Tak. Zarządzeniem Rektora Uniwersytetu Ekonomicznego w Krakowie nr R-0121-13/2009 z 28 lutego 2009 roku został wprowadzony obowiązek weryfikacji systemem antyplagiatowym wszystkich prac dyplomowych składanych po 1 czerwca 2009 r. </p>
-        </li>
-
         <li>
           <h4>Czy mogę sprawdzić pracę zakładając prywatne konto w systemie Plagiat.pl i wgrywając na nie swoją pracę?</h4>
           <p>Nie jest to możliwe przede wszystkim dlatego, że ogólnodostępny system porównuje tekst pracy jedynie z zasobami Internetu, podczas gdy wersja systemu wykorzystywana na UEK dokonuje porównania prac także z tzw. bazą macierzystą uczelni, czyli ze sprawdzonymi dotychczas pracami innych studentów UEK oraz z bazami macierzystymi kilkudziesięciu innych polskich uczelni. Ponadto system antyplagiatowy UEK zapewnia promotorowi pracy bezpośredni dostęp do wyniku porównywania prac, czyli do tzw. raportu podobieństwa.</p>
@@ -506,5 +517,7 @@ www.plagiat.pl.</pre>
   <script type="text/javascript" src="js/plugins/Flashlight.js"></script>
   <script type="text/javascript" src="js/flashlight.js"></script>
   <script type="text/javascript" src="js/simple-functions.js"></script>
+
+  <script type="text/javascript" src="js/angular-1.3.0-beta.min.js"></script>
 </body>
 </html>
