@@ -294,73 +294,6 @@ www.plagiat.pl.</pre>
   </div>
 
 
-  <!-- ****************************** Dodatki ******************************* -->
-  <div data-role="page" id="page_addons">
-    <div data-role="panel" id="myPanel5" data-position-fixed="true" data-display="reveal" data-theme="b">
-      <h2>Menu</h2>
-      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
-      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
-      <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
-      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active">Dodatki</a>
-      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
-      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
-    </div>
-
-    <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Latarka</h1>
-      <a href="#myPanel5" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
-      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
-    </div>
-
-    <div data-role="main" class="ui-content">
-      <fieldset>
-        <div data-role="fieldcontain" id="btnFlashlightOff" onclick="flashlightToggle();">
-          <label for="checkbox-based-flipswitch">Latarka:</label>
-          <input type="checkbox" data-role="flipswitch">
-        </div>
-      </fieldset>
-    </div>
-
-    <div data-role="footer" data-position="fixed" data-theme="d">
-      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
-    </div>
-  </div>
-
-
-  <!-- ****************************** Settings ******************************* -->
-  <div data-role="page" id="page_settings">
-    <div data-role="panel" id="myPanel7" data-position-fixed="true" data-display="reveal" data-theme="b">
-      <h2>Menu</h2>
-      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
-      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
-      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
-      <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
-      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
-      <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
-      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
-      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Ustawienia</a>
-      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
-    </div>
-
-    <div data-role="header" data-position="fixed" data-theme="d">
-      <h1>Kontakt</h1>
-      <a href="#myPanel7" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
-      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
-    </div>
-
-    <div data-role="main" class="ui-content">
-      <p id="deviceProperties">Loading device properties...</p>
-    </div>
-
-    <div data-role="footer" data-position="fixed" data-theme="d">
-      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
-    </div>
-  </div>
-
-
 
   <!-- ****************************** FAQ ******************************* -->
   <div data-role="page" id="page_faq">
@@ -463,6 +396,75 @@ www.plagiat.pl.</pre>
         </div>
       <p ng-show="(faq | filter:textQuery).length == 0" class="info-sand"><strong>Brak pasujących odpowiedzi.</strong><br/><br/>
       Nie odnaleziono pasujących kryteriów do szukanej frazy. Spróbuj ponownie zmianiając przy tym kryterium wyszukiwania.</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+
+
+
+  <!-- ****************************** Dodatki ******************************* -->
+  <div data-role="page" id="page_addons">
+    <div data-role="panel" id="myPanel5" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
+      <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left ui-btn-active">Dodatki</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left">Ustawienia</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Latarka</h1>
+      <a href="#myPanel5" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <fieldset>
+        <div data-role="fieldcontain" id="btnFlashlightOff" onclick="flashlightToggle();">
+          <label for="checkbox-based-flipswitch">Latarka:</label>
+          <input type="checkbox" data-role="flipswitch">
+        </div>
+      </fieldset>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+
+  <!-- ****************************** Settings ******************************* -->
+  <div data-role="page" id="page_settings">
+    <div data-role="panel" id="myPanel7" data-position-fixed="true" data-display="reveal" data-theme="b">
+      <h2>Menu</h2>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
+      <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
+      <a href="#page_activate_account" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Aktywacja konta</a>
+      <a href="#" onclick="window.open('http://www.plagiat.pl', '_system');" class="ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left">Logowanie</a>
+      <a href="#page_procedures" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Złożenia i procedury</a>
+      <a href="#page_faq" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">FAQ</a>
+      <a href="#page_addons" class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Dodatki</a>
+      <a href="#page_settings" class="ui-btn ui-corner-all ui-icon-mail ui-btn-icon-left ui-btn-active">Ustawienia</a>
+      <a href="#page_author" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left">Autor</a>
+    </div>
+
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Kontakt</h1>
+      <a href="#myPanel7" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p id="deviceProperties">Loading device properties...</p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
