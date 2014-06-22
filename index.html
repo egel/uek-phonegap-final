@@ -30,9 +30,7 @@
                           '<strong>Platforma urządzania:</strong> ' + device.platform + '<br />' +
                           '<strong>UUID urządzania:</strong> '     + device.uuid     + '<br />' +
                           '<strong>Wersja oprogramowania urządzania:</strong> '  + device.version  + '<br />';
-  }
 
-  function onDeviceReady() {
       window.localStorage.setItem("imie", "Stefan");
       var value = window.localStorage.getItem("imie");
       document.getElementById("imie-uzytkownika").innerHTML = value;
