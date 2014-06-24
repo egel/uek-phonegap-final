@@ -60,6 +60,7 @@ Aplikacja powinna spełniać następujące wymagania:
 ## Wsparcie
 Warto posłużyć się następującymi rozwiązaniami podczas budowy aplikacji:
 
+  - [Hello world aplication in Phonegap](https://github.com/phonegap/phonegap-start)
   - Generator ikonek [http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html](http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
   - [Ripple Emulator (Beta)](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc) - dodatek do Chrome, który pomaga w projektowaniu apki na mniejsze urzadzenia - WAŻNE: aby dodatek działał poprawnie należy właczyć w ustawieniach rozszerzeń `Zezwalaj na dostęp do adresów URL plików`.
   - [JQueryMobile tutorial](http://www.w3schools.com/jquerymobile/default.asp)
