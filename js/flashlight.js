@@ -5,11 +5,11 @@ function flashlightToggle()
     //window.plugins.toast.show('flashlight toggled','short','center',false);
     if(lightstate)
     {
-        window.plugins.toast.show('light off','short','center',false);
+        window.plugins.toast.show('Latarka wyłączona','short','center',false);
         lightstate = false;
     }else
     {
-        window.plugins.toast.show('light on','short','center',false);
+        window.plugins.toast.show('Latarka włączona','short','center',false);
         lightstate = true;
     }
 }
