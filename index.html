@@ -30,16 +30,20 @@
                           '<strong>Platforma urządzania:</strong> ' + device.platform + '<br />' +
                           '<strong>UUID urządzania:</strong> '      + device.uuid     + '<br />' +
                           '<strong>Wersja oprogramowania urządzania:</strong> ' + device.version + '<br />';
+      //
+      xmlDoc=loadXMLDoc("config.xml");
+      app_name = xmlDoc.getElementsByTagName('name');
+
 
       // ustawienie defaultowych danych aplikacji
-      xmlDoc=loadXMLDoc("config.xml");
+      window.localStorage.setItem("app-name", app_name)
+      window.localStorage.setItem("owner-name", "Maciej");
+      window.localStorage.setItem("owner-surename", "Sypień");
 
-      x=xmlDoc.getElementsByTagName('widget');
+      var value = window.localStorage.getItem("app-name");
+      document.getElementById("app-name").innerHTML = value;
 
-      for (i=0;i<x.length;i++)
-      {
-        document.getElementById("app-version").innerHTML = x[i].getAttribute('version');
-      }
+
   }
   </script>
 </head>
@@ -67,7 +71,7 @@
     <div data-role="main" class="ui-content" style="text-align:center;">
       <img src="images/logo-uek-mini.png" alt="Logo Uniwersyteru Ekonomicznego w Krakowie" width="300" />
       <h4>Aplikacja prezentująca działanie systemu Antyplagiat</h4>
-      <p id="app-version">Loading from XML</p>
+      <p id="app-name">Loading from XML</p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -665,7 +669,24 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content">
-      <p id="deviceProperties">Loading device properties...</p>
+      <div data-role="collapsibleset">
+        <div data-role="collapsible">
+          <h3>Info o aplikacji</h3>
+          <p>I'm the expanded content.</p>
+        </div>
+        <div data-role="collapsible">
+          <h3>Informację o urządzeniu</h3>
+          <p id="deviceProperties">Loading device properties...</p>
+        </div>
+        <div data-role="collapsible">
+          <h3>Click me - I'm collapsible!</h3>
+          <p>I'm the expanded content.</p>
+        </div>
+        <div data-role="collapsible">
+          <h3>Click me - I'm collapsible!</h3>
+          <p>I'm the expanded content.</p>
+        </div>
+      </div>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
