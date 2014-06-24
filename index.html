@@ -42,8 +42,12 @@
       window.localStorage.setItem("owner-name", "Maciej Sypień");
       window.localStorage.setItem("owner-album-id", "184774");
 
+      //set for landing page
       var value = window.localStorage.getItem("app-version");
       document.getElementById("app-version").innerHTML = value;
+
+      //set for settings page
+      document.getElementById('owner-fullname').value = window.localStorage.getItem("owner-name");
 
   }
   </script>
@@ -675,16 +679,33 @@ www.plagiat.pl.</pre>
           <h3>Informacje o aplikacji</h3>
           <p class="option">Licencja oprogramowania dla:</p>
           <p class="value"><span id="owner-name">Ładowanie nazwy użytkownika</span></p>
-          <a href="#settings_popup" data-role="button" data-rel="popup">Zmień ustawienia</button>
+          <a href="#settings_popup" data-role="button" data-rel="popup" style="margin:10px;">Zmień ustawienia</a>
 
           <div data-role="popup" id="settings_popup" class="ui-content" data-dismissible="false" style="max-width:400px;">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-            <p>I am an undismissible button (data-dismissible="false). The only way to close me is by clicking on the close button, which is positioned at the top right corner. You cannot close me by clicking outside of me.</p>
+            <p style="padding-bottom:20px;">W tym miejscu możesz zmienić swoje personalne ustawienia dotyczące aplikacji.</p>
+            <label for="fullname">Imie i nazwisko:</label>
+            <input type="text" name="fullname" id="owner-fullname">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Your email..">
+            <a href="#" data-role="button" onclick="zapisz_ustawiania_aplikacji();">Zapisz</a>
           </div>
         </div>
         <div data-role="collapsible">
           <h3>Informacje o urządzeniu</h3>
           <div id="deviceProperties">Loading device properties...</div>
+        </div>
+        <div data-role="collapsible">
+          <h3>Informacje o autorze</h3>
+          <p class="option">Autor</p>
+          <p class="value">Maciej Sypień</p>
+
+          <p class="option">Grupa dziekańska:</p>
+          <p class="value">KrZUIs2011</p>
+
+          <p class="option">Numer albumu:</p>
+          <p class="value">184774</p>
         </div>
       </div>
     </div>
@@ -718,9 +739,7 @@ www.plagiat.pl.</pre>
     </div>
 
     <div data-role="main" class="ui-content" style="text-align:center; padding-top: 100px;">
-      <h1>Maciej Sypień</h1>
-      <p>Grupa dziekańska: <strong>KrZUIs2011</strong></p>
-      <p>Numer albumu: <strong>184774</strong></p>
+
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
