@@ -26,6 +26,7 @@ p.option {
   padding: 10px;
   background: #e9e9e9;
   color: #262626;
+  font-weight: bold;
 }
 p.value {
   margin:0;
@@ -70,4 +71,12 @@ p.value {
  */
 ol.better-list li {
     padding: 10px 0 10px 0;
+}
+
+
+/*
+ *  Override default jQuery CSS
+ */
+.ui-collapsible-content {
+  padding: 0;
 }
