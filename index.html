@@ -29,12 +29,17 @@
                           '<strong>Wersja PhoneGap:</strong> '      + device.phonegap + '<br />' +
                           '<strong>Platforma urządzania:</strong> ' + device.platform + '<br />' +
                           '<strong>UUID urządzania:</strong> '      + device.uuid     + '<br />' +
-                          '<strong>Wersja oprogramowania urządzania:</strong> '  + device.version  + '<br />';
+                          '<strong>Wersja oprogramowania urządzania:</strong> ' + device.version + '<br />';
 
       // ustawienie defaultowych danych aplikacji
-      window.localStorage.setItem("imie", "Stefan");
-      var value = window.localStorage.getItem("imie");
-      document.getElementById("imie-uzytkownika").innerHTML = value;
+      xmlDoc=loadXMLDoc("config.xml");
+
+      x=xmlDoc.getElementsByTagName('widget');
+
+      for (i=0;i<x.length;i++)
+      {
+        document.getElementById("app-version").innerHTML = x[i].getAttribute('version');
+      }
   }
   </script>
 </head>
@@ -62,7 +67,7 @@
     <div data-role="main" class="ui-content" style="text-align:center;">
       <img src="images/logo-uek-mini.png" alt="Logo Uniwersyteru Ekonomicznego w Krakowie" width="300" />
       <h4>Aplikacja prezentująca działanie systemu Antyplagiat</h4>
-      <p id="imie-uzytkownika">Loading from localStorage</p>
+      <p id="app-version">Loading from XML</p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
