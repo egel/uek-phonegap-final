@@ -40,6 +40,7 @@
       // ustawienie defaultowych danych aplikacji
       window.localStorage.setItem("app-version", "1.1")
       window.localStorage.setItem("owner-name", "Maciej Sypień");
+      window.localStorage.setItem("owner-email", "maciej.sypien@gmail.com");
       window.localStorage.setItem("owner-album-id", "184774");
 
       //set for landing page
@@ -47,7 +48,9 @@
       document.getElementById("app-version").innerHTML = value;
 
       //set for settings page
-      document.getElementById('owner-fullname').value = window.localStorage.getItem("owner-name");
+      document.getElementById('owner-app-fullname').value = window.localStorage.getItem("owner-name");
+      document.getElementById('owner-app-album-id').value = window.localStorage.getItem("owner-album-id");
+      document.getElementById('owner-app-email').value = window.localStorage.getItem("owner-email");
 
   }
   </script>
@@ -400,7 +403,7 @@ www.plagiat.pl.</pre>
 
   <!-- ************** Złożenia i procedury: Instrukcja sprawdzania pracy przejściowej ************** -->
   <div data-role="page" id="page_procedures_check_usual_project">
-    <div data-role="panel" id="myPanel6" data-position-fixed="true" data-display="reveal" data-theme="b">
+    <div data-role="panel" id="myPanel6b" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
@@ -415,7 +418,7 @@ www.plagiat.pl.</pre>
 
     <div data-role="header" data-position="fixed" data-theme="d">
       <h1>Złożenia i procedury</h1>
-      <a href="#myPanel6" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#myPanel6b" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
@@ -465,7 +468,7 @@ www.plagiat.pl.</pre>
 
   <!-- ************** Złożenia i procedury: Zmiana chasła ************** -->
   <div data-role="page" id="page_procedures_change_password">
-    <div data-role="panel" id="myPanel6" data-position-fixed="true" data-display="reveal" data-theme="b">
+    <div data-role="panel" id="myPanel6c" data-position-fixed="true" data-display="reveal" data-theme="b">
       <h2>Menu</h2>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Home</a>
       <a href="#page_overall_info" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-left">Informacje ogólne</a>
@@ -480,7 +483,7 @@ www.plagiat.pl.</pre>
 
     <div data-role="header" data-position="fixed" data-theme="d">
       <h1>Złożenia i procedury</h1>
-      <a href="#myPanel6" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
+      <a href="#myPanel6c" class="ui-btn ui-corner-all ui-icon-grid ui-btn-icon-notext">Menu</a>
       <a href="#page_main" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home page</a>
     </div>
 
@@ -496,6 +499,7 @@ www.plagiat.pl.</pre>
         <li>Po kliknięciu na link przesłany pocztą elektroniczną System wygeneruje nowe hasło do i prześle go na skrzynkę poczty elektronicznej.</li>
 
         <li>W celu zmiany hasła do konta w Systemie Antyplagiatowym należy zastosować identyczną procedurę, jak opisana w punktach 1-4.</li>
+      </ol>
     </div>
 
     <div data-role="footer" data-theme="d">
@@ -684,11 +688,14 @@ www.plagiat.pl.</pre>
           <div data-role="popup" id="settings_popup" class="ui-content" data-dismissible="false" style="max-width:400px;">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
             <p style="padding-bottom:20px;">W tym miejscu możesz zmienić swoje personalne ustawienia dotyczące aplikacji.</p>
-            <label for="fullname">Imie i nazwisko:</label>
-            <input type="text" name="fullname" id="owner-fullname">
+            <label for="owner-app-fullname">Imie i nazwisko:</label>
+            <input type="text" name="fullname" id="owner-app-fullname" placeholder="Wpisz swoje imię i nazwisko">
 
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" placeholder="Your email..">
+            <label for="owner-app-album-id">Numer albumu:</label>
+            <input type="text" name="fullname" id="owner-app-album-id" placeholder="Wpisz swój numer albumu">
+
+            <label for="owner-app-email">E-mail:</label>
+            <input type="email" name="email" id="owner-app-email" placeholder="Wpisz swój adres e-mail">
             <a href="#" data-role="button" onclick="zapisz_ustawiania_aplikacji();">Zapisz</a>
           </div>
         </div>
