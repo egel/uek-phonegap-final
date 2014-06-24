@@ -47,7 +47,12 @@
       var value = window.localStorage.getItem("app-version");
       document.getElementById("app-version").innerHTML = value;
 
-      //set for settings page
+      //setting
+      document.getElementById('owner-name').value = window.localStorage.getItem("owner-name");
+      document.getElementById('owner-album-id').value = window.localStorage.getItem("owner-album-id");
+      document.getElementById('owner-email').value = window.localStorage.getItem("owner-email");
+
+      //settings for popup change
       document.getElementById('owner-app-fullname').value = window.localStorage.getItem("owner-name");
       document.getElementById('owner-app-album-id').value = window.localStorage.getItem("owner-album-id");
       document.getElementById('owner-app-email').value = window.localStorage.getItem("owner-email");
@@ -680,11 +685,17 @@ www.plagiat.pl.</pre>
     <div data-role="main" class="ui-content">
       <div data-role="collapsibleset">
         <div data-role="collapsible">
-          <h3>Informacje o aplikacji</h3>
-          <p class="option">Licencja oprogramowania dla:</p>
-          <p class="value"><span id="owner-name">Ładowanie nazwy użytkownika</span></p>
+          <h3>Dane użytkownika</h3>
+          <p class="option">Nazwa użytkownika:</p>
+          <p class="value"><span id="owner-name">Ładowanie danych</span></p>
+          <p class="option">Numer albumu użytkownika:</p>
+          <p class="value"><span id="owner-album-id">Ładowanie danych</span></p>
+          <p class="option">E-mail użytkownika:</p>
+          <p class="value"><span id="owner-">Ładowanie danych</span></p>
+
           <a href="#settings_popup" data-role="button" data-rel="popup" style="margin:10px;">Zmień ustawienia</a>
 
+          <!-- Popup changes -->
           <div data-role="popup" id="settings_popup" class="ui-content" data-dismissible="false" style="max-width:400px;">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
             <p style="padding-bottom:20px;">W tym miejscu możesz zmienić swoje personalne ustawienia dotyczące aplikacji.</p>
