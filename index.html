@@ -25,24 +25,25 @@
   function onDeviceReady() {
       var element = document.getElementById('deviceProperties');
 
-      element.innerHTML = '<strong>Nazwa urządzenia:</strong> '     + device.name     + '<br />' +
-                          '<strong>Wersja PhoneGap:</strong> '      + device.phonegap + '<br />' +
-                          '<strong>Platforma urządzania:</strong> ' + device.platform + '<br />' +
-                          '<strong>UUID urządzania:</strong> '      + device.uuid     + '<br />' +
-                          '<strong>Wersja oprogramowania urządzania:</strong> ' + device.version + '<br />';
+      element.innerHTML =
+        '<p class="option">Nazwa urządzenia:</p>' +
+          '<p class="value">' + device.name + '<p>' +
+        '<p class="option">Wersja PhoneGap:</p> ' +
+          '<p class="value">' + device.phonegap + '</p>' +
+        '<p class="option">Platforma urządzania:</p> '
+          '<p class="value">' + device.platform + '</p>' +
+        '<p class="option">UUID urządzania:</p> ' +
+          '<p class="value">' + device.uuid + '</p>' +
+        '<p class="option">Wersja oprogramowania:</p> ' +
+          '<p class="value">' + device.version + '</p>';
       //
-      xmlDoc=loadXMLDoc("config.xml");
-      app_name = xmlDoc.getElementsByTagName('name');
-
-
       // ustawienie defaultowych danych aplikacji
-      window.localStorage.setItem("app-name", app_name)
-      window.localStorage.setItem("owner-name", "Maciej");
-      window.localStorage.setItem("owner-surename", "Sypień");
+      window.localStorage.setItem("app-version", "1.1")
+      window.localStorage.setItem("owner-name", "Maciej Sypień");
+      window.localStorage.setItem("owner-album-id", "184774");
 
-      var value = window.localStorage.getItem("app-name");
-      document.getElementById("app-name").innerHTML = value;
-
+      var value = window.localStorage.getItem("app-version");
+      document.getElementById("app-version").innerHTML = value;
 
   }
   </script>
@@ -71,7 +72,7 @@
     <div data-role="main" class="ui-content" style="text-align:center;">
       <img src="images/logo-uek-mini.png" alt="Logo Uniwersyteru Ekonomicznego w Krakowie" width="300" />
       <h4>Aplikacja prezentująca działanie systemu Antyplagiat</h4>
-      <p id="app-name">Loading from XML</p>
+      <p>Wersja <span id="app-version">Loading from XML</span></p>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
@@ -671,20 +672,19 @@ www.plagiat.pl.</pre>
     <div data-role="main" class="ui-content">
       <div data-role="collapsibleset">
         <div data-role="collapsible">
-          <h3>Info o aplikacji</h3>
-          <p>I'm the expanded content.</p>
+          <h3>Informacje o aplikacji</h3>
+          <p class="option">Licencja oprogramowania dla:</p>
+          <p class="value"><span id="owner-name">Ładowanie nazwy użytkownika</span></p>
+          <a href="#settings_popup" data-role="button" data-rel="popup">Zmień ustawienia</button>
+
+          <div data-role="popup" id="settings_popup" class="ui-content" data-dismissible="false" style="max-width:400px;">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <p>I am an undismissible button (data-dismissible="false). The only way to close me is by clicking on the close button, which is positioned at the top right corner. You cannot close me by clicking outside of me.</p>
+          </div>
         </div>
         <div data-role="collapsible">
-          <h3>Informację o urządzeniu</h3>
-          <p id="deviceProperties">Loading device properties...</p>
-        </div>
-        <div data-role="collapsible">
-          <h3>Click me - I'm collapsible!</h3>
-          <p>I'm the expanded content.</p>
-        </div>
-        <div data-role="collapsible">
-          <h3>Click me - I'm collapsible!</h3>
-          <p>I'm the expanded content.</p>
+          <h3>Informacje o urządzeniu</h3>
+          <div id="deviceProperties">Loading device properties...</div>
         </div>
       </div>
     </div>
