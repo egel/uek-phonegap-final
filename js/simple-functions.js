@@ -1,5 +1,7 @@
 function aktualizuj_ustawienia() {
 
+    console.log("aktualizuj_ustawienia!");
+
     var fullname = window.localStorage.getItem("owner-name");
     var email = window.localStorage.getItem("owner-email");
     var album = window.localStorage.getItem("owner-album-id");
@@ -44,7 +46,9 @@ function zapisz_ustawiania_aplikacji() {
         window.localStorage.setItem("owner-email", email);
         window.localStorage.setItem("owner-album-id", album);
         console.log("zapisano poprawnie");
+        aktualizuj_ustawienia();
         window.plugins.toast.show('Ustawienia zapisano pomyślnie', 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
+        window.location = "index.html#page_settings";
     }
     else
     {
