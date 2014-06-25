@@ -1,3 +1,35 @@
+function aktualizuj_ustawienia() {
+
+    var fullname = window.localStorage.getItem("owner-name");
+    var email = window.localStorage.getItem("owner-email");
+    var album = window.localStorage.getItem("owner-album-id");
+
+    //setting
+    if(fullname) {
+        document.getElementById('owner-name').innerHTML = window.localStorage.getItem("owner-name");
+    } else {
+        window.localStorage.setItem("owner-name", "undefined");
+    }
+
+    if(email) {
+        document.getElementById('owner-email').innerHTML = window.localStorage.getItem("owner-email");
+    } else {
+        window.localStorage.setItem("owner-email", "undefined");
+    }
+
+    if(album) {
+        document.getElementById('owner-album-id').innerHTML = window.localStorage.getItem("owner-album-id");
+    } else {
+        window.localStorage.setItem("owner-album-id", "undefined");
+    }
+
+    //settings for popup change
+    document.getElementById('owner-app-fullname').value = window.localStorage.getItem("owner-name");
+    document.getElementById('owner-app-album-id').value = window.localStorage.getItem("owner-album-id");
+    document.getElementById('owner-app-email').value = window.localStorage.getItem("owner-email");
+}
+
+
 function zapisz_ustawiania_aplikacji() {
 
     var fullname = document.getElementById('owner-app-fullname').value;
@@ -17,7 +49,7 @@ function zapisz_ustawiania_aplikacji() {
     else
     {
         console.log("Brak wszystkich wymaganych danych");
-        window.plugins.toast.show('Błąd zapisu', 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
+        window.plugins.toast.show('Brak wszystkich wymaganych danych', 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
     }
 }
 
