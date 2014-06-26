@@ -14,6 +14,7 @@
 
   <!-- phonegap -->
   <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+  <script type="text/javascript" src="js/simple-functions.js"></script>
   <script>
 
   // Wait for PhoneGap to load
@@ -23,31 +24,34 @@
   // PhoneGap is ready
   //
   function onDeviceReady() {
-      var element = document.getElementById('deviceProperties');
 
-      element.innerHTML =
-        '<p class="option">Nazwa urządzenia:</p>' +
-          '<p class="value">' + device.name + '<p>' +
-        '<p class="option">Wersja PhoneGap:</p> ' +
-          '<p class="value">' + device.phonegap + '</p>' +
-        '<p class="option">Platforma urządzania:</p> ' +
-          '<p class="value">' + device.platform + '</p>' +
-        '<p class="option">UUID urządzania:</p> ' +
-          '<p class="value">' + device.uuid + '</p>' +
-        '<p class="option">Wersja oprogramowania:</p> ' +
-          '<p class="value">' + device.version + '</p>';
-      //
-      // ustawienie defaultowych danych aplikacji
-      window.localStorage.setItem("app-version", "1.1")
-      //window.localStorage.setItem("owner-name", "Maciej Sypień");
-      //window.localStorage.setItem("owner-email", "maciej.sypien@gmail.com");
-      //window.localStorage.setItem("owner-album-id", "184774");
+    // właczenie konfiguracji ustawień przy włączeniu aplikacji i nie zapisaniu danych
+    var settings_counter = window.localStorage.getItem("settings-counter");
+    if(!settings_counter) {
+      window.location = "index.html#page_settings";
+    }
 
-      //set for landing page
-      var value = window.localStorage.getItem("app-version");
-      document.getElementById("app-version").innerHTML = value;
-      aktualizuj_ustawienia();
+    // zapisanie ustawień telefonu do aplikacji.
+    var element = document.getElementById('deviceProperties');
+    element.innerHTML =
+      '<p class="option">Nazwa urządzenia:</p>' +
+        '<p class="value">' + device.name + '<p>' +
+      '<p class="option">Wersja PhoneGap:</p> ' +
+        '<p class="value">' + device.phonegap + '</p>' +
+      '<p class="option">Platforma urządzania:</p> ' +
+        '<p class="value">' + device.platform + '</p>' +
+      '<p class="option">UUID urządzania:</p> ' +
+        '<p class="value">' + device.uuid + '</p>' +
+      '<p class="option">Wersja oprogramowania:</p> ' +
+        '<p class="value">' + device.version + '</p>';
+    //
+    // ustawienie defaultowych danych aplikacji
+    window.localStorage.setItem("app-version", "1.1");
 
+    //set for landing page
+    var value = window.localStorage.getItem("app-version");
+    document.getElementById("app-version").innerHTML = value;
+    aktualizuj_ustawienia();
   }
   </script>
 </head>
@@ -773,7 +777,6 @@ www.plagiat.pl.</pre>
   <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
   <script type="text/javascript" src="js/plugins/Flashlight.js"></script>
   <script type="text/javascript" src="js/flashlight.js"></script>
-  <script type="text/javascript" src="js/simple-functions.js"></script>
 
 </body>
 </html>
