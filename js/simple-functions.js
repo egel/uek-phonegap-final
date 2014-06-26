@@ -61,6 +61,36 @@ function zapisz_ustawiania_aplikacji() {
     }
 }
 
+
+// ustawienia specjalnie dla konfiguracji startowej aplikacji i tylko dla niej.
+zapisz_ustawiania_startowe_aplikacji() {
+    var fullname = document.getElementById('start-owner-fullname').value;
+    var email = document.getElementById('start-owner-email').value;
+    var album = document.getElementById('start-owner-album-id').value;
+
+    //console.log(fullname, email, album)
+
+    if(fullname && email && album)
+    {
+        window.localStorage.setItem("owner-name", fullname);
+        window.localStorage.setItem("owner-email", email);
+        window.localStorage.setItem("owner-album-id", album);
+        console.log("zapisano poprawnie");
+        aktualizuj_ustawienia();
+
+        //sprawdzenie czy wartość istnieje
+        window.localStorage.setItem("settings-counter", "true")
+
+        window.plugins.toast.show('Ustawienia zapisano pomyślnie', 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
+        window.location = "index.html#page_settings";
+    }
+    else
+    {
+        console.log("Brak wszystkich wymaganych danych");
+        window.plugins.toast.show('Brak wszystkich wymaganych danych', 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
+    }
+}
+
 function onSuccessSaveSettings() {
     console.log('toast success: ' + a)
 }

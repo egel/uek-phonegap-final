@@ -56,20 +56,47 @@
   </script>
 </head>
 <body>
-  <!-- ****************************** First start of an app ******************************* -->
-  <div data-role="page" id="page_start">
+  <!-- ****************************** Start of an app ******************************* -->
+  <div data-role="page" id="page_start1">
     <div data-role="header" data-position="fixed" data-theme="d">
       <h1>Start</h1>
     </div>
 
     <div data-role="main" class="ui-content" style="text-align:center;">
       <h1>Witaj!</h1>
-      <p>To Twoje pierwsze uruchomienie aplikacji Antyplagiat.<br/>
-      Aby przejść dalej, należy uzupełnić niezbędne dane do poprawnego działania aplikacji.</p>
+      <p>To Twoje pierwsze uruchomienie aplikacji <strong>Antyplagiat UEK</strong>.</p>
 
-      <p>Klinkij poniższy link, aby uzupełnić swoje dane osobowe.</p>
+      <p>Aby przejść dalej, należy uzupełnić niezbędne dane personalne.</p>
 
-      <a href="#settings_popup" data-role="button" data-rel="popup" style="margin:10px;">Konfiguracja</a>
+      <p>Klinkij poniższy link, aby przejść dalej.</p>
+
+      <a href="#page_start2" data-role="button" style="margin:10px;">Konfiguracja</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="d">
+      <h1>Uniwersytet Ekonomiczny w Krakowie</h1>
+    </div>
+  </div>
+
+
+  <div data-role="page" id="page_start2">
+    <div data-role="header" data-position="fixed" data-theme="d">
+      <h1>Konfiguracja</h1>
+    </div>
+
+    <div data-role="main" class="ui-content" style="text-align:center;">
+      <h1>Konfiguracja</h1>
+      <p>Uzupełnij poniższe ustawienia personalne w celu poprawnego działania aplikacji.</p>
+
+      <label for="start-owner-fullname">Imie i nazwisko:</label>
+      <input type="text" name="fullname" id="start-owner-fullname" placeholder="np.: Jan Kowalski">
+
+      <label for="start-owner-email">E-mail:</label>
+      <input type="email" name="email" id="start-owner-email" placeholder="np.: jan.kowalski@przyklad.pl">
+
+      <label for="start-owner-album-id">Numer albumu:</label>
+      <input type="text" name="fullname" id="start-owner-album-id" placeholder="np.: 845234">
+      <a href="#" data-role="button" onclick="zapisz_ustawiania_startowe_aplikacji();">Zapisz i zakończ</a>
     </div>
 
     <div data-role="footer" data-position="fixed" data-theme="d">
