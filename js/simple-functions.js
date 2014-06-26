@@ -63,7 +63,7 @@ function zapisz_ustawiania_aplikacji() {
 
 
 // ustawienia specjalnie dla konfiguracji startowej aplikacji i tylko dla niej.
-zapisz_ustawiania_startowe_aplikacji() {
+function zapisz_ustawiania_startowe_aplikacji() {
     var fullname = document.getElementById('start-owner-fullname').value;
     var email = document.getElementById('start-owner-email').value;
     var album = document.getElementById('start-owner-album-id').value;
@@ -79,10 +79,9 @@ zapisz_ustawiania_startowe_aplikacji() {
         aktualizuj_ustawienia();
 
         //sprawdzenie czy wartość istnieje
-        window.localStorage.setItem("settings-counter", "true")
-
+        window.localStorage.setItem("settings-counter", "true");
         window.plugins.toast.show('Ustawienia zapisano pomyślnie', 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
-        window.location = "index.html#page_settings";
+        window.location = "index.html#page_main";
     }
     else
     {

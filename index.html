@@ -27,8 +27,8 @@
 
     // właczenie konfiguracji ustawień przy włączeniu aplikacji i nie zapisaniu danych
     var settings_counter = window.localStorage.getItem("settings-counter");
-    if(!settings_counter) {
-      window.location = "index.html#page_start";
+    if(settings_counter !== "true") {
+      window.location = "index.html#page_start1";
     }
 
     // zapisanie ustawień telefonu do aplikacji.
@@ -46,7 +46,7 @@
         '<p class="value">' + device.version + '</p>';
     //
     // ustawienie defaultowych danych aplikacji
-    window.localStorage.setItem("app-version", "1.1");
+    window.localStorage.setItem("app-version", "1.2");
 
     //set for landing page
     var value = window.localStorage.getItem("app-version");
