@@ -84,6 +84,17 @@ function zapisz_ustawiania_startowe_aplikacji() {
     }
 }
 
+
+function prepare_email() {
+
+    var fullname = window.localStorage.getItem("owner-name", fullname);
+    var email = window.localStorage.getItem("owner-email", email);
+    var album = window.localStorage.getItem("owner-album-id", album);
+
+    window.location.href = "mailto:uasa@uek.krakow.pl?subject=Pytanie dotyczące systemu Antyplagiat | " + fullname + " nr.alb." + album;
+}
+
+
 function onSuccessSaveSettings() {
     console.log('toast success: ' + a)
 }
