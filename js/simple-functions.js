@@ -97,7 +97,7 @@ function prepare_email() {
 
 // Check network status
 //
-function checkConnection() {
+function checkConnection(fullURL) {
     var networkState = navigator.connection.type;
 
     var states = {};
@@ -110,14 +110,24 @@ function checkConnection() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
 
-    alert('Connection type: ' + states[networkState]);
-    window.plugins.toast.show('Connection type: ' + states[networkState], 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
+
+    if(states[networkState] == 'No network connection')
+    {
+        alert('Connection type: ' + states[networkState]);
+    }
+    else
+    {
+        window.plugins.toast.show('Connection type: ' + states[networkState], 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
+        if(fullURL)
+        {
+            window.open(fullURL, '_system');
+        }
+    }
 }
 
 
 function open_plagiat_page() {
-    checkConnection();
-    window.open('http://www.plagiat.pl', '_system');
+    checkConnection("http://plagiat.pl");
 }
 
 
