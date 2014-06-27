@@ -101,23 +101,23 @@ function checkConnection(fullURL) {
     var networkState = navigator.connection.type;
 
     var states = {};
-    states[Connection.UNKNOWN]  = 'Unknown connection';
-    states[Connection.ETHERNET] = 'Ethernet connection';
-    states[Connection.WIFI]     = 'WiFi connection';
-    states[Connection.CELL_2G]  = 'Cell 2G connection';
-    states[Connection.CELL_3G]  = 'Cell 3G connection';
-    states[Connection.CELL_4G]  = 'Cell 4G connection';
-    states[Connection.CELL]     = 'Cell generic connection';
-    states[Connection.NONE]     = 'No network connection';
+    states[Connection.UNKNOWN]  = 'Nieznany rodzaj połączenia';
+    states[Connection.ETHERNET] = 'Połączenie Ethernet';
+    states[Connection.WIFI]     = 'Połączenie WiFi';
+    states[Connection.CELL_2G]  = 'Połączenie sieci 2G';
+    states[Connection.CELL_3G]  = 'Połączenie sieci 3G';
+    states[Connection.CELL_4G]  = 'Połączenie sieci 4G';
+    states[Connection.CELL]     = 'Połączenie sieci komówkowej';
+    states[Connection.NONE]     = 'Brak połączenia z siecią Internet';
 
 
-    if(states[networkState] == 'No network connection')
+    if(states[networkState] == 'Brak połączenia z siecią Internet')
     {
-        alert('Connection type: ' + states[networkState]);
+        alert(states[networkState]);
     }
     else
     {
-        window.plugins.toast.show('Connection type: ' + states[networkState], 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
+        window.plugins.toast.show('Typ połączenia: ' + states[networkState], 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
         if(fullURL)
         {
             window.open(fullURL, '_system');
