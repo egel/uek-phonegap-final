@@ -95,6 +95,34 @@ function prepare_email() {
 }
 
 
+function open_plagiat_page() {
+    navigator.network.isReachable("plagiat.pl", reachableCallback, {});
+}
+
+
+// Check network status
+//
+function reachableCallback(reachability) {
+    // There is no consistency on the format of reachability
+    var networkState = reachability.code || reachability;
+
+    var states = {};
+    states[NetworkStatus.NOT_REACHABLE]                      = 'Brak połączenia z siecią Internet';
+    states[NetworkStatus.REACHABLE_VIA_CARRIER_DATA_NETWORK] = 'Carrier data connection';
+    states[NetworkStatus.REACHABLE_VIA_WIFI_NETWORK]         = 'Połączenie WiFi';
+
+    if(networkState != 0) {
+        window.open('http://www.plagiat.pl', '_system');
+    }
+    else
+    {
+        window.plugins.toast.show('Connection type: ' + states[networkState], 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
+    }
+
+}
+
+
+
 function onSuccessSaveSettings() {
     console.log('toast success: ' + a)
 }
