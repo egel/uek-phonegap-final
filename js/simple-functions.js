@@ -47,7 +47,6 @@ function zapisz_ustawiania_aplikacji() {
         window.localStorage.setItem("owner-album-id", album);
         console.log("zapisano poprawnie");
         aktualizuj_ustawienia();
-
         window.plugins.toast.show('Ustawienia zapisano pomyślnie', 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
         window.location = "index.html#page_settings";
     }
@@ -75,8 +74,6 @@ function zapisz_ustawiania_startowe_aplikacji() {
         console.log("zapisano poprawnie");
         aktualizuj_ustawienia();
 
-        //sprawdzenie czy wartość istnieje
-        window.localStorage.setItem("settings-counter", "true");
         window.plugins.toast.show('Ustawienia zapisano pomyślnie', 'short', 'center', onSuccessSaveSettings, onErrorSaveSettings);
         window.location = "index.html#page_main";
     }
