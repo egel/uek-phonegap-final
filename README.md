@@ -1,7 +1,20 @@
 # UEK Phonegap
 > Aplikacja stworzona na zajęcia z Zaawansowanych Aplikacji Internetowych w oparciu o technologię Phonegap oraz jQuery mobile.
 
-## Instalacja
+
+## Główne cechy
+
+ - Użycie pluginów: flashlight, toast, alerts, localStroage, wifi notifications
+ - Biblioteki: jQuery Mobile, AngularJS
+ - Themeroller for jQuery Mobile
+ - Zapisywanie ustawnień przy 1-szym starcie aplikacji oraz strona z ustawieniami
+ - Dynamiczne wybieranie pytań z strony FAQ
+ - Notyfikacje o połączeniu z stonami zewnętrznymi np: plagiat.pl
+ - wykorzystanie ustawień w przygotowaniu półgotowego maila na stronie kontakt
+ - strona z dodatkami (Latarka)
+
+
+## Pobieranie projektu
 
  - Pobrać plik `.zip`
  - lub użyć git'a
@@ -20,7 +33,7 @@ Wykońać do tego:
   - zbudować apikację na urządzenia mobilne dzięki usłudze [Phonegap Build](http://build.phonegap.com).
 
 
-### Wytyczne pierwszorzędne
+### Wymagania pierwszorzędne
 
 Aplikacja powinna spełniać następujące wymagania:
 
@@ -36,7 +49,7 @@ Aplikacja powinna spełniać następujące wymagania:
   10. Implementacja dodatkowej funkcjonalności wybranej przez sudenta: np. GPS, Akcelerometr, System Plików itp. Wykorzystanie API.
 
 
-### Wytyczne drugorzędne
+### Wymagania drugorzędne
 
   1. Wykonaj aplikację ‘UEK’ zgodnie z podaną treścią zadania (poniżej).
   2. Dodaj do menu aplikacji pozycję ‘Autor’.
@@ -61,12 +74,13 @@ Aplikacja powinna spełniać następujące wymagania:
 Warto posłużyć się następującymi rozwiązaniami podczas budowy aplikacji:
 
   - [Hello world aplication in Phonegap](https://github.com/phonegap/phonegap-start)
-  - Generator ikonek [http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html](http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
+  - [Generator ikonek](http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
   - [Ripple Emulator (Beta)](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc) - dodatek do Chrome, który pomaga w projektowaniu apki na mniejsze urzadzenia - WAŻNE: aby dodatek działał poprawnie należy właczyć w ustawieniach rozszerzeń `Zezwalaj na dostęp do adresów URL plików`.
   - [JQueryMobile tutorial](http://www.w3schools.com/jquerymobile/default.asp)
   - [W3School](http://www.w3schools.com/jquerymobile/jquerymobile_examples.asp) jQuery Mobile examples
-  - WAŻNE - Zanim projekt zostanie przekompilowany do aplikacji mobilnej, warto sprawdzić go odpowiednim [validatorem](http://validator.w3.org/#validate_by_input) udostępnionemu dzięki konsorcjum **W3C**, aby pozbyć się potencjalnych błędów w działaniu aplikacji.
+  - **WAŻNE** - Zanim projekt zostanie przekompilowany do aplikacji mobilnej, warto sprawdzić go odpowiednim [validatorem](http://validator.w3.org/#validate_by_input) udostępnionemu dzięki konsorcjum **W3C**, aby pozbyć się potencjalnych błędów w działaniu aplikacji.
   - [How to install Android SDK on Ubuntu](http://askubuntu.com/questions/318246/complete-installation-guide-for-android-sdk-adt-bundle-on-ubuntu)
+  - [Phonegap starter](https://github.com/phonegap/phonegap-start/)
 
 
 ## Phonegap Build
@@ -84,6 +98,7 @@ Wystarczy:
     - opis
   - A następnie zbudować aplikację
 
+
 ## Themes
 Utowrzono jedne template według zaleceń [http://themeroller.jquerymobile.com/](http://themeroller.jquerymobile.com/).
 
@@ -94,6 +109,7 @@ W nim zawarto kilka różnych templatów poszeregowanych na:
   - C - konfiguracja elementu "listview"
   - D - Zmiana tła i tekstu belki górnej i dolnej
   - E - Default theme
+
 
 ## License
 Oprogramowanie na licencji [GNU AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html). Created by Maciej Sypień.
