@@ -91,7 +91,8 @@ function prepare_email() {
     var email = window.localStorage.getItem("owner-email", email);
     var album = window.localStorage.getItem("owner-album-id", album);
 
-    window.location.href = "mailto:uasa@uek.krakow.pl?subject=Pytanie dotyczące systemu Antyplagiat | " + fullname + " nr.alb." + album;
+    window.location.href = "mailto:uasa@uek.krakow.pl?subject=Pytanie dotyczące systemu Antyplagiat | " +
+                            fullname + " nr.alb." + album + "&from=" + email;
 }
 
 
